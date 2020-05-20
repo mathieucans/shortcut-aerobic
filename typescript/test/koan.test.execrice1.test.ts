@@ -8,14 +8,4 @@
         - re-execute last test execution by using ^R
         - execute all test by placing cursor between two test and using ^⇧R
  */
-describe('first koan', () => {
-    test('first test', () => {
 
-    });
-    test('first test', () => {
-
-    });
-    test('first test', () => {
-
-    });
-});
