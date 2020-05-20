@@ -7,5 +7,6 @@
         - execute first test by using ^⇧R
         - re-execute last test execution by using ^R
         - execute all test by placing cursor between two test and using ^⇧R
+        -reset your work by using ⌥⌘Z
  */
 
