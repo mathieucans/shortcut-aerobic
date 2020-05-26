@@ -1,5 +1,7 @@
 /*
     Learn to use short cut to create and execute test.
+    Goal : create a test file with three tests names first test, second and third test.
+
         - use ⌘⏎ to complete code statement
         - use ^↑ to select first test
         - use ⌘D to duplicate first test
@@ -7,6 +9,6 @@
         - execute first test by using ^⇧R
         - re-execute last test execution by using ^R
         - execute all test by placing cursor between two test and using ^⇧R
-        -reset your work by using ⌥⌘Z
+        - reset your work by using ⌥⌘Z
  */
 
