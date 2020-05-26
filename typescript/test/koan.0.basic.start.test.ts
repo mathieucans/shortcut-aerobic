@@ -1,4 +1,4 @@
-describe('how to navigate to to next failing test', () => {
+describe('Get started :  navigate to to next failing test', () => {
     test('first of all : run all test by using ^⇧R', () => {
         expect('try this new shortcut koan').toBeDefined();
     });
