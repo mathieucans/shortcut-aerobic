@@ -22,6 +22,16 @@ describe('navigate, selection and deletion', () => {
         expect(deleteUnusedLine).toEqual('This test should pass');
     });
 
+    test('Multi selection / edition : use ^G to select next occurrence then edit multi lines', () => {
+        let message = `Un tiens vaut mieux que deux tu l'auras.`;
+        message += `Un tiens vaut mieux que deux tu l'auras.`;
+        message += `Un tiens vaut mieux que deux tu l'auras.`;
+        message += `Un tiens vaut mieux que deux tu l'auras.`;
+        message += `Un tiens vaut mieux que deux tu l'auras.`;
+        message += `Un tiens vaut mieux que deux tu l'auras.`;
+        expect(message).toEqual('ha ha ha ha ha ha ');
+    });
+
     test('Delete this test and navigate to begin block by using ⌘⌥[', () => {
         fail('Delete this test and navigate to top');
     });
