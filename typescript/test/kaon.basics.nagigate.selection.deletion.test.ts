@@ -11,6 +11,11 @@ describe('navigate, selection and deletion', () => {
         expect('                             to much spaces kill spaces').not.toContain('    ');
     });
 
+    test('Deletion to word start word', () => {
+        // Delete all unused spaces by using delete tow Word End ⌥⌫ / Ctrl+Backspace
+        expect('delete the last straw!MouseForEver').not.toContain('MouseForEver');
+    });
+
     test('Delete the failing line', () => {
         let deleteUnusedLine = 'This test should pass';
         deleteUnusedLine += '*** delete me by using ⌘⌫ ****';
