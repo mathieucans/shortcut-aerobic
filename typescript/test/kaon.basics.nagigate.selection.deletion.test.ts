@@ -6,7 +6,7 @@ describe('navigate, selection and deletion', () => {
         expect(new ModuleA().test()).toEqual('youpii');
     });
 
-    test('deletion', () => {
+    test('Deletion to next word', () => {
         // Delete all unused spaces by using delete tow Word End ⌥⌦ / Ctrl+Delete
         expect('                             to much spaces kill spaces').not.toContain('    ');
     });
