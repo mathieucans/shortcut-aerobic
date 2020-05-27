@@ -1,4 +1,4 @@
-describe('usefull short cut refactoring', () => {
+describe('usefull short cut refactoring. All test should still green.', () => {
     test('extract name to a variable by using ⌘⌥V', () => {
         expect(`Hello David!`).toEqual('Hello David!');
     });
