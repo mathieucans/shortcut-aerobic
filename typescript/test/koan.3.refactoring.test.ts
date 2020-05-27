@@ -1,6 +1,6 @@
 describe('usefull short cut refactoring', () => {
-    test('extract variable hello and concat world by using ⌘⌥V', () => {
-        expect('Hello').toEqual('Hello David!');
+    test('extract name to a variable by using ⌘⌥V', () => {
+        expect('Hello name').toEqual('Hello David!');
     });
 
     test('extract parameter name by using ⌘⌥P', () => {
@@ -9,5 +9,15 @@ describe('usefull short cut refactoring', () => {
         }
 
         expect(sayHello()).toEqual('Hello David!');
+    });
+
+    test('extract field name by using ⌘⌥F and affect it in constructor', () => {
+        class Hello {
+            say() {
+                return 'Hello name!';
+            }
+        }
+
+        expect(new Hello().say()).toEqual('Hello David!');
     });
 });
