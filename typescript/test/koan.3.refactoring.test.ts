@@ -1,3 +1,5 @@
+import {French, SayHello} from "../src/SayHello";
+
 describe('usefull short cut refactoring. All test should still green.', () => {
     test('extract name to a variable by using ⌘⌥V', () => {
         // TIPS : use ⌥⏎ to replace with template string first
@@ -42,5 +44,13 @@ describe('usefull short cut refactoring. All test should still green.', () => {
 
         expect(new Hello('fr').say('David')).toEqual('Bonjour David!');
         expect(new Hello( 'en').say('David')).toEqual('Hello David!');
+    });
+
+    test('extract following variables to before each', () => {
+        // TIPS : split affectation and declaration by using ⌥⏎
+        const language = new French();
+        const sayHello = new SayHello(language);
+
+        expect(sayHello.hello()).toEqual('Salut David!');
     });
 });
