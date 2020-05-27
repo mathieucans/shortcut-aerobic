@@ -10,4 +10,17 @@ describe('Get started :  navigate to to next failing test', () => {
     test('you cans also navigate to next failing test by using F2', () => {
         expect(`it's quite easier isn't it ?`).toEqual('then make this test pass');
     });
+
+    test('make this test pass and rerun last test execution by using ^R', () => {
+        expect(true).toBeFalsy();
+    });
+
+    test('make this test pass and rerun only this test by using ^⇧R with cursor in the test scope', () => {
+        expect(true).toBeFalsy();
+    });
+
+    test('make this test pass and rerun all test by using ^⇧R with cursor between two tests', () => {
+        expect(true).toBeFalsy();
+    });
+
 });
