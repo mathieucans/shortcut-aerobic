@@ -26,6 +26,11 @@ describe('navigate, selection and deletion', () => {
         expect(`***** SELECT ME WITH EXTEND SELECTION*****`).toEqual('selected')
     });
 
+    test('select ⌥↑ to extend selection code scope', () => {
+        expect(new ModuleA().test()).toEqual('youpii');
+        expect(`***** REPLACE ME *****`).toEqual('new ModuleA().test()')
+    });
+
     test('Use ^G to select next occurrence then edit multi lines', () => {
         let message = `Un tiens vaut mieux que deux tu l'auras.`;
         message += `Un tiens vaut mieux que deux tu l'auras.`;
