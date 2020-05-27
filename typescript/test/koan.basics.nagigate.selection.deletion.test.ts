@@ -2,7 +2,7 @@ import ModuleA from "../src/moduleA";
 
 describe('navigate, selection and deletion', () => {
     /// Navigate to end block by using ⌘⌥]
-    test('This test pass, use ⌘⌥] to navigate to end block and delete a failing test', () => {
+    test('This test pass, use ⌘⌥] to navigate to end block and delete last failing test', () => {
         expect(new ModuleA().test()).toEqual('youpii');
     });
 
