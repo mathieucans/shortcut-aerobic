@@ -1,5 +1,5 @@
 ### Short cut GDM aerobic ###
 
 #### TODO
- - F2
- - extract variables, parameters etc...
+ - F2 with compilation error
+ - Refactoring aerobic extract variables, parameters etc...
