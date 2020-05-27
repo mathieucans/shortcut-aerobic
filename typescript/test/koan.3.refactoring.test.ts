@@ -1,6 +1,7 @@
 describe('usefull short cut refactoring. All test should still green.', () => {
     test('extract name to a variable by using ⌘⌥V', () => {
-        expect(`Hello David!`).toEqual('Hello David!');
+        // TIPS : use ⌥⏎ to replace with template string first
+        expect('Hello David!').toEqual('Hello David!');
     });
 
     test('extract parameter name by using ⌘⌥P', () => {
