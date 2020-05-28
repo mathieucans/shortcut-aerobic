@@ -11,9 +11,11 @@ describe('Generate code by using your IDE', () => {
     });
 
     test('extract interface Language of French by using ^T / Ctrl+Shift+Alt+T', () => {
-        // TIPS : Navigate to French implementation by using ⌘B / Ctrl+B
-        // const language = English();
-        let sayHello = new SayHello(new French());
+        // Uncomment this line
+        // const language = new English();
+        // Comment this line
+        const language = new French();
+        let sayHello = new SayHello(language);
 
         let response = sayHello.hello();
 
