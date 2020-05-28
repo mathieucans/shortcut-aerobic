@@ -7,10 +7,6 @@ describe('Get started :  navigate to to next failing test', () => {
         expect(true).toBeFalsy();
     });
 
-    test('select the first failing test by using ⌘4 / Alt+4 and arrows', () => {
-        expect('then press ESC to navigate to source').toEqual('then make this test pass');
-    });
-
     test('you cans also navigate to next failing test by using F2', () => {
         expect(`it's quite easier isn't it ?`).toEqual('then make this test pass');
     });

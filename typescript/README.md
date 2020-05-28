@@ -2,6 +2,8 @@
 
 Start by first koans and let you drive by tests.
 
+Before all install dependencies :
+ `npm install` 
 
 #### TODO
  - F2 with compilation error
