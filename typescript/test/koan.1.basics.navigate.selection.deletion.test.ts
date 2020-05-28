@@ -1,4 +1,4 @@
-import ModuleA from "../src/moduleA";
+import ModuleA from "../src/ModuleA";
 
 describe('navigate, selection and deletion', () => {
     /// Navigate to end of file by using ⌘A,→  / Ctrl+A, →
@@ -43,5 +43,9 @@ describe('navigate, selection and deletion', () => {
 
     test('Delete this test and navigate to to of file by using ⌘A,←', () => {
         fail('Delete this test and navigate to top');
+    });
+
+    test('Navigate to sayYes definition by using ⌘B / Ctrl+B', () => {
+        expect(new ModuleA().sayYes()).toEqual('yes');
     });
 });
