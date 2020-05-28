@@ -7,12 +7,12 @@ describe('navigate, selection and deletion', () => {
     });
 
     test('Deletion to next word', () => {
-        // Delete all unused spaces by using delete tow Word End ⌥⌦ / Ctrl+Delete
+        // Delete all unused spaces by using delete to Word End ⌥⌦ / Ctrl+Delete
         expect('                             to much spaces kill spaces').not.toContain('    ');
     });
 
     test('Deletion to word start word', () => {
-        // Delete all unused spaces by using delete tow Word End ⌥⌫ / Ctrl+Backspace
+        // Delete MouseForEver by using delete to Word Start ⌥⌫ / Ctrl+Backspace
         expect('delete the last straw!MouseForEver').not.toContain('MouseForEver');
     });
 
