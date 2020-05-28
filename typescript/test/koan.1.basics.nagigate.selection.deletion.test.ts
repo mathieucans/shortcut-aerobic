@@ -18,20 +18,20 @@ describe('navigate, selection and deletion', () => {
 
     test('Delete the failing line', () => {
         let deleteUnusedLine = 'This test should pass';
-        deleteUnusedLine += '*** delete me by using ⌘⌫ ****';
+        deleteUnusedLine += '*** delete me by using ⌘⌫ / Ctrl+Y ****';
         expect(deleteUnusedLine).toEqual('This test should pass');
     });
 
-    test('select ⌥↑ to extend selection', () => {
+    test('Extend selection by using ⌥↑ / Ctrl+W', () => {
         expect(`***** SELECT ME WITH EXTEND SELECTION*****`).toEqual('selected')
     });
 
-    test('select ⌥↑ to extend selection code scope', () => {
+    test('Extend selection code scope by using ⌥↑ / Ctrl+W', () => {
         expect(new ModuleA().test()).toEqual('youpii');
         expect(`***** REPLACE ME *****`).toEqual('new ModuleA().test()')
     });
 
-    test('Use ^G to select next occurrence then edit multi lines', () => {
+    test('Select next occurrence by using ^G / Alt+J then edit multi lines', () => {
         let message = `Un tiens vaut mieux que deux tu l'auras.`;
         message += `Un tiens vaut mieux que deux tu l'auras.`;
         message += `Un tiens vaut mieux que deux tu l'auras.`;
@@ -40,7 +40,6 @@ describe('navigate, selection and deletion', () => {
         message += `Un tiens vaut mieux que deux tu l'auras.`;
         expect(message).toEqual('ha ha ha ha ha ha ');
     });
-
 
     test('Delete this test and navigate to begin block by using ⌘⌥[', () => {
         fail('Delete this test and navigate to top');

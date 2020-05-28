@@ -1,12 +1,12 @@
 import {French, SayHello} from "../src/SayHello";
 
 describe('usefull short cut refactoring. All test should still green.', () => {
-    test('extract name to a variable by using ⌘⌥V', () => {
-        // TIPS : use ⌥⏎ to replace with template string first
+    test('extract name to a variable by using ⌘⌥V / Ctrl+Alt+V', () => {
+        // TIPS : replace with template string first by using ⌥⏎ / Alt+Enter
         expect('Hello David!').toEqual('Hello David!');
     });
 
-    test('extract parameter name by using ⌘⌥P', () => {
+    test('extract parameter name by using ⌘⌥P / Ctrl+Alt+P', () => {
         function sayHello() {
             return `Hello David!`;
         }
@@ -14,7 +14,7 @@ describe('usefull short cut refactoring. All test should still green.', () => {
         expect(sayHello()).toEqual('Hello David!');
     });
 
-    test('extract field name by using ⌘⌥F and affect it in constructor', () => {
+    test('extract field name by using ⌘⌥F / Ctrl+Alt+F and affect it in constructor', () => {
         class Hello {
             say() {
                 return `Hello David!`;
@@ -24,7 +24,7 @@ describe('usefull short cut refactoring. All test should still green.', () => {
         expect(new Hello().say()).toEqual('Hello David!');
     });
 
-    test('extract method hello with one parameters by using ⌘⌥M', () => {
+    test('extract method hello with one parameters by using ⌘⌥M / Ctrl+Alt+M', () => {
         class Hello {
             constructor(private lang: string) {
             }
@@ -47,7 +47,7 @@ describe('usefull short cut refactoring. All test should still green.', () => {
     });
 
     test('extract following variables to before each', () => {
-        // TIPS : split affectation and declaration by using ⌥⏎
+        // TIPS : split affectation and declaration by using ⌥⏎ / Alt+Enter
         const language = new French();
         const sayHello = new SayHello(language);
 
