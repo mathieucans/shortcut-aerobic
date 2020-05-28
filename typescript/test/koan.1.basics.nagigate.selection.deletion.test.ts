@@ -1,7 +1,7 @@
 import ModuleA from "../src/moduleA";
 
 describe('navigate, selection and deletion', () => {
-    /// Navigate to end block by using ⌘⌥]
+    /// Navigate to end of file by using ⌘A,→  / Ctrl+A, →
     test('This test pass, use ⌘⌥] to navigate to end block and delete last failing test', () => {
         expect(new ModuleA().test()).toEqual('youpii');
     });
@@ -41,7 +41,7 @@ describe('navigate, selection and deletion', () => {
         expect(message).toEqual('ha ha ha ha ha ha ');
     });
 
-    test('Delete this test and navigate to begin block by using ⌘⌥[', () => {
+    test('Delete this test and navigate to to of file by using ⌘A,←', () => {
         fail('Delete this test and navigate to top');
     });
 });
