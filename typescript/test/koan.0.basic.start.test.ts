@@ -3,16 +3,16 @@ describe('Get started :  navigate to to next failing test', () => {
         expect('try this new shortcut koan').toBeDefined();
     });
 
+    test('make this test pass and rerun last test execution by using ^R / Shift + F10', () => {
+        expect(true).toBeFalsy();
+    });
+
     test('select the first failing test by using ⌘4 / Alt+4 and arrows', () => {
         expect('then press ⌘⏎ / Ctrl+Enter, the ESC to navigate to source').toEqual('then make this test pass');
     });
 
     test('you cans also navigate to next failing test by using F2', () => {
         expect(`it's quite easier isn't it ?`).toEqual('then make this test pass');
-    });
-
-    test('make this test pass and rerun last test execution by using ^R / Shift + F10', () => {
-        expect(true).toBeFalsy();
     });
 
     test('make this test pass and rerun only this test by using ^⇧R / Crtl+Shift+F10 with cursor in the test scope', () => {
