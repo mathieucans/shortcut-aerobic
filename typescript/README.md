@@ -6,6 +6,7 @@ Before all install dependencies :
  `npm install` 
 
 #### TODO
- - F2 with compilation error
  - Case toggle
- - Safe delet ⌘⌦
+ - Safe delete ⌘⌦
+ - Inline
+ 
