@@ -12,15 +12,22 @@ namespace dotnetcore
         } 
         
         [Fact]
-        public void Run_this_test_only()
+        public void Run_last_test_execution()
         {
-            Assert.Equal("Make this test pass", "done");
+            Assert.Equal("by using ⌘;,Y", "done");
+        }
+
+        [Fact]
+        public void Navigate_to_next_or_previous_test()
+        {
+            Assert.Equal("by using ⌘↑ or ⌘↓", "done");            
         }
         
         [Fact]
-        public void Run_last_test_execution()
+        public void Run_this_test_only()
         {
-            Assert.Equal("Make this test pass", "done");
+            Assert.Equal("by using ^⇧R with cursor inside this test", "done");
         }
+        
     }
 }
