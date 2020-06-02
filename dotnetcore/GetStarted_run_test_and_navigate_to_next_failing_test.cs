@@ -21,7 +21,7 @@ namespace dotnetcore
         [Fact]
         public void Navigate_to_next_or_previous_test()
         {
-            "by using ⌘↑ or ⌘↓".Should().Be("done");            
+            "by using ⌘⌥↑ or ⌘⌥↓".Should().Be("done");            
         }
         
         [Fact]
