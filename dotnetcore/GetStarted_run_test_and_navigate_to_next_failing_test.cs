@@ -8,7 +8,7 @@ namespace dotnetcore
         [Fact]
         public void Run_all_test_of_this_file()
         {
-            Assert.Equal("by using ⌘;,R with cursor beetween two test", "done");
+            Assert.Equal("by using ^⇧R with cursor beetween two test", "done");
         } 
         
         [Fact]
