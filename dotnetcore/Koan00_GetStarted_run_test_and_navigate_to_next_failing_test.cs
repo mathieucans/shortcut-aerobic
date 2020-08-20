@@ -21,7 +21,7 @@ namespace dotnetcore
         [Fact]
         public void Koan03_Run_last_test_execution()
         {
-            "by using Ctrl+U,Y".Should().Be("done");
+            "by using Ctrl+U,U".Should().Be("done");
         }
 
         [Fact]
