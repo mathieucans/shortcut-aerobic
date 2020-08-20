@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using dotnetcore.src;
 using FluentAssertions;
 using Xunit;
 
@@ -54,5 +55,13 @@ namespace dotnetcore
             message += "Un tiens vaut mieux que deux tu l'auras.";
             message.Should().Be("ha ha ha ha ha ha ");
         }
+
+        [Fact]
+        public void Koan07_Navigate_to_sayYes_definition()
+        {
+            // by using Ctrl+B
+            new ModuleA().SayYes().Should().Be("yes");
+        }
+
     }
 }
