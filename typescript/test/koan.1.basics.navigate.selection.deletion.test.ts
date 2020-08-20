@@ -41,11 +41,11 @@ describe('navigate, selection and deletion', () => {
         expect(message).toEqual('ha ha ha ha ha ha ');
     });
 
-    test('Delete this test and navigate to to of file by using ⌘A,←', () => {
-        fail('Delete this test and navigate to top');
-    });
-
     test('Navigate to sayYes definition by using ⌘B / Ctrl+B', () => {
         expect(new ModuleA().sayYes()).toEqual('yes');
+    });
+
+    test('Delete this test and navigate to to of file by using ⌘A,←', () => {
+        fail('Delete this test and navigate to top');
     });
 });
