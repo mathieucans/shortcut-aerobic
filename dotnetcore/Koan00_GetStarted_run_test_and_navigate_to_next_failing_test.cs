@@ -3,7 +3,7 @@ using Xunit;
 
 namespace dotnetcore
 {
-    public class GetStarted_run_test_and_navigate_to_next_failing_test
+    public class Koan00_GetStarted_run_test_and_navigate_to_next_failing_test
     {
 
         [Fact]
