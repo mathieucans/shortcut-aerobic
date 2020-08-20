@@ -7,6 +7,13 @@ namespace dotnetcore
     public class Koan00_GetStarted_run_test_and_navigate_to_next_failing_test
     {
         [Fact]
+        public void Koan00_display_all_action()
+        {
+            // If you are looking for a short cut you can find it 
+            "by using Ctrl+Shift+A".Should().Be("done");
+        }
+
+        [Fact]
         public void Koan01_run_all_of_the_solution()
         {
             "by using Ctrl+U,L".Should().Be("done");
@@ -15,7 +22,7 @@ namespace dotnetcore
         [Fact]
         public void Koan02_run_all_test_of_this_file()
         {
-            "by using Ctrl+U,R with cursor beetween two test".Should().Be("done");
+            "by using Ctrl+U,R with cursor between two test".Should().Be("done");
         } 
         
         [Fact]

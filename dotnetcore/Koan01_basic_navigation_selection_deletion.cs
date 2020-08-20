@@ -63,5 +63,17 @@ namespace dotnetcore
             new ModuleA().SayYes().Should().Be("yes");
         }
 
+        [Fact]
+        public void Koan07_Navigate_to_ModuleA_class()
+        {
+            "by using Ctrl+Alt+Shift+N".Should().Be("done");
+        }
+        
+        [Fact]
+        public void Koan08_Navigate_to_ModuleA_file()
+        {
+            "by using Ctrl+Shift+N".Should().Be("done");
+        }
+
     }
 }
