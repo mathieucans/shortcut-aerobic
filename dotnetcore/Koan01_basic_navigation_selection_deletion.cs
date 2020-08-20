@@ -23,7 +23,7 @@ namespace dotnetcore
         [Fact]
         public void Koan03_Delete_to_word_start()
         {
-            "by using Ctrl+Del".Should().Be("done");
+            "by using Ctrl+Del".Should().Be("");
         }
 
         [Fact]
