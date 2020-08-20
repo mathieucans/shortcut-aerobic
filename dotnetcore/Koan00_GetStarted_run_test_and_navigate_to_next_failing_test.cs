@@ -5,7 +5,6 @@ namespace dotnetcore
 {
     public class Koan00_GetStarted_run_test_and_navigate_to_next_failing_test
     {
-
         [Fact]
         public void Koan01_run_all_of_the_solution()
         {

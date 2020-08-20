@@ -11,19 +11,19 @@ namespace dotnetcore
         [Fact]
         public void Koan01_Navigate_to_end_of_file()
         {
-            Assert.False(true, "by using Ctrl+END");
+            "by using Ctrl+END".Should().Be("done");
         }
-        
+
         [Fact]
         public void Koan02_Delete_next_word()
         {
-            Assert.False(true, "by using Ctrl+Suppr");
+            "by using Ctrl+Suppr".Should().Be("done");
         }
 
         [Fact]
         public void Koan03_Delete_to_word_start()
         {
-            Assert.False(true, "by using Ctrl+Del");
+            "by using Ctrl+Del".Should().Be("done");
         }
 
         [Fact]
@@ -40,6 +40,19 @@ namespace dotnetcore
             "***** SELECT ME WITH EXTEND SELECTION WITH Ctrl+W*****".Should().Be("selected");
         }
 
-
+        [Fact]
+        public void Koan06_Select_next_occurence()
+        {
+            // Next occurence selection is not available neither in Visual Studio nor Resharper
+            // To enable this amazing feature install NextOccurence extension to VisualStudio https://marketplace.visualstudio.com/items?itemName=thomaswelen.SelectNextOccurrence
+            // Then map next Occurence to your favorite short cut (Intellij programers use Alt+J on windows)
+            var message = "Un tiens vaut mieux que deux tu l'auras.";
+            message += "Un tiens vaut mieux que deux tu l'auras.";
+            message += "Un tiens vaut mieux que deux tu l'auras.";
+            message += "Un tiens vaut mieux que deux tu l'auras.";
+            message += "Un tiens vaut mieux que deux tu l'auras.";
+            message += "Un tiens vaut mieux que deux tu l'auras.";
+            message.Should().Be("ha ha ha ha ha ha ");
+        }
     }
 }
