@@ -47,12 +47,12 @@ namespace dotnetcore
             // Next occurence selection is not available neither in Visual Studio nor Resharper
             // To enable this amazing feature install NextOccurence extension to VisualStudio https://marketplace.visualstudio.com/items?itemName=thomaswelen.SelectNextOccurrence
             // Then map next Occurence to your favorite short cut (Intellij programers use Alt+J on windows)
-            var message = "Un tiens vaut mieux que deux tu l'auras.";
-            message += "Un tiens vaut mieux que deux tu l'auras.";
-            message += "Un tiens vaut mieux que deux tu l'auras.";
-            message += "Un tiens vaut mieux que deux tu l'auras.";
-            message += "Un tiens vaut mieux que deux tu l'auras.";
-            message += "Un tiens vaut mieux que deux tu l'auras.";
+            var message = "efjklfjdlif sdkldjskd ; jfdskljfdklfj ,...";
+            message += "efjklfjdlif sdkldjskd ; jfdskljfdklfj ,...";
+            message += "efjklfjdlif sdkldjskd ; jfdskljfdklfj ,...";
+            message += "efjklfjdlif sdkldjskd ; jfdskljfdklfj ,...";
+            message += "efjklfjdlif sdkldjskd ; jfdskljfdklfj ,...";
+            message += "efjklfjdlif sdkldjskd ; jfdskljfdklfj ,;dk ...;";
             message.Should().Be("ha ha ha ha ha ha ");
         }
 
