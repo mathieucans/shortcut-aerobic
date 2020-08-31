@@ -3,7 +3,7 @@ import {French, SayHello} from "../src/SayHello";
 describe('usefull short cut refactoring.', () => {
     test('replace simple quote with template string first by using ⌥⏎ / Alt+Enter', () => {
         expect('C est le déluge!').toEqual(`C'est le déluge!`);
-    })
+    });
 
     test('extract firstname to a variable by using ⌘⌥V / Ctrl+Alt+V', () => {
         expect('Hello firstname!').toEqual('Hello David!');
