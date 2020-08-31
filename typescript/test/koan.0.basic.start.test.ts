@@ -19,4 +19,8 @@ describe('Get started :  navigate to to next failing test', () => {
         expect(true).toBeFalsy();
     });
 
+    test('you can open next koan by Navigate to file by using ⌘⇧O / Ctrl+Shift+N', () => {
+        expect(true).toBeFalsy();
+    });
+
 });
