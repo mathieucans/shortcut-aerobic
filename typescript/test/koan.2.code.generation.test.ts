@@ -1,5 +1,3 @@
-import {French, SayHello} from "../src/SayHello";
-
 describe('Generate code by using your IDE', () => {
     test('Uncomment and generate class and method by unsing ⌥⏎ / Alt+Enter', () => {
         // TIPS : you can navigate through error code by using F2
@@ -22,3 +20,20 @@ describe('Generate code by using your IDE', () => {
         expect(response).toEqual('Hello David!');
     });
 });
+
+
+class French {
+    hello() {
+        return 'Salut';
+    }
+}
+
+class SayHello {
+    constructor(private language: French) {
+
+    }
+
+    hello() {
+        return `${this.language.hello()} David!`;
+    }
+}
