@@ -59,6 +59,7 @@ describe('usefull short cut refactoring.', () => {
 
     test('move variables into describe scope and init it in  beforeEach function', () => {
         // TIPS : split affectation and declaration by using ⌥⏎ / Alt+Enter
+        // then use move Statement up by using ⌘⇧↑ / Ctrl+Shift+Up
         const language = new French();
         const sayHello = new SayHello(language);
 
