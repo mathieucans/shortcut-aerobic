@@ -33,5 +33,10 @@ class `Koan 0 - Basics - Get started - navigate to to next failing test` {
         assertThat(true).isFalse()
     }
 
+    @Test
+    fun `07 - you can open run menu by using ^⌥R | Shift+Alt+F10 and select the configuration you want`() {
+        assertThat(true).isFalse()
+    }
+
 
 }
