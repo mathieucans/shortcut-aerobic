@@ -1,5 +1,3 @@
-import {French, SayHello} from "../src/SayHello";
-
 describe('usefull short cut refactoring.', () => {
     test('replace simple quote with template string first by using ⌥⏎ / Alt+Enter', () => {
         expect('C est le déluge!').toEqual(`C'est le déluge!`);
@@ -66,3 +64,19 @@ describe('usefull short cut refactoring.', () => {
         expect(sayHello.hello()).toContain(language.hello());
     });
 });
+
+class French {
+    hello() {
+        return 'Salut';
+    }
+}
+
+class SayHello {
+    constructor(private language: French) {
+
+    }
+
+    hello() {
+        return `${this.language.hello()} David!`;
+    }
+}
