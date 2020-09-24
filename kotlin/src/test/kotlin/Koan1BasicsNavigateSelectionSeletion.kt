@@ -2,7 +2,7 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 
-class `Koan 0 navigate, selection and deletion` {
+class `Koan 1 - navigate, selection and deletion` {
     /// Navigate to end of file by using ⌘A,→  / Ctrl+A, →
     @Test
     fun `01 - This test pass, use ⌘A→ to navigate to end block and delete last failing test`() {
