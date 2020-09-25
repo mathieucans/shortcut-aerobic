@@ -1,6 +1,6 @@
 class ModuleA {
     fun test(): String {
-        return "youpii";
+        return "youpii"
     }
 
     fun sayYes(): String {
