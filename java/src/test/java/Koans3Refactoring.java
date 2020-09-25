@@ -53,7 +53,7 @@ class Koans3Refactoring {
                     case "en" : hello = "Hello"; break;
                 }
                 // to this line to extract method
-                return "${hello} ${firstName}!";
+                return hello + " " + firstName + "!";
             }
         }
 
