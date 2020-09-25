@@ -20,7 +20,7 @@ class Koans2CodeGeneration {
         // by using ^T | Ctrl+Shift+Alt+T
 
         // Uncomment this line
-        // English language = English();
+        // English language = new English();
         // Comment this line
         French language = new French();
         SayHello sayHello = new SayHello(language);
