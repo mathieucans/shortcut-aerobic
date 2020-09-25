@@ -37,9 +37,10 @@ class Koans1BasicsNavigateSelection {
 
     @Test
     void Koan06_extend_selection_code_scope() {
-        // by using ⌥↑ | Ctrl+W
+        // extend selection depends on scope, by using ⌥↑ | Ctrl+W select only what needed in line below
         assertThat(new ModuleA().test()).isEqualTo("youpii");
-        assertThat("***** REPLACE ME *****").isEqualTo("new ModuleA().test()");
+        // ans paste it in the folowing assertion
+        assertThat("**** REPLACE ME ****").isEqualTo("new ModuleA().test()");
     }
 
     @Test
