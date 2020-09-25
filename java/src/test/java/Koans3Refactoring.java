@@ -23,7 +23,9 @@ class Koans3Refactoring {
 
     @Test
     void Koan03_extract_field_firstname_and_affect_it_in_constructor() {
-        // by using ⌘⌥F | Ctrl+Alt+F
+        // extract field by selecting firstname and by using ⌘⌥F | Ctrl+Alt+F
+        // Choose constructor initialization
+        // then extract parameter to make test pass
         class Hello {
             String say() {
                 return "Hello firstname!";
@@ -31,6 +33,7 @@ class Koans3Refactoring {
         }
 
         assertThat(new Hello().say()).isEqualTo("Hello David!");
+        assertThat(new Hello().say()).isEqualTo("Hello Vincent!");
     }
 
     @Test
