@@ -16,14 +16,14 @@ class Koans0BasicsStart {
     }
 
     @Test
-    void Koan03_you_cans_also_navigate_to_next_failing_test(){
+    void Koan03_you_can_also_navigate_to_next_failing_test(){
         // by using F2
         assertThat("it's quite easier isn't it ?").isEqualTo("then make this test pass");
     }
 
     @Test
     void Koan04_make_this_test_pass_and_rerun_only_this_test(){
-        //  by using ^⇧R | Crtl+Shift+F10 with cursor inside this test scope`() {
+        //  by using ^⇧R | Crtl+Shift+F10 with cursor inside this test scope
         assertThat(true).isFalse();
     }
 
@@ -34,14 +34,14 @@ class Koans0BasicsStart {
     }
 
     @Test
-    void Koan06_you_can_open_next_koan_by_Navigate_to_file() {
-        // by using ⌘⇧O | Ctrl+Shift+N
+    void Koan06_you_can_open_run_menu() {
+        // by using ^⌥R | Shift+Alt+F10 and select the configuration you want
         assertThat(true).isFalse();
     }
 
     @Test
-    void Koan07_you_can_open_run_menu() {
-        // by using ^⌥R | Shift+Alt+F10 and select the configuration you want
+    void Koan07_you_can_open_next_koan_by_Navigate_to_file() {
+        // by using ⌘⇧O | Ctrl+Shift+N
         assertThat(true).isFalse();
     }
 }
