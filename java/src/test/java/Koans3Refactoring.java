@@ -6,14 +6,15 @@ import static org.assertj.core.api.Assertions.assertThat;
 class Koans3Refactoring {
     @Test
     void Koan01_extract_firstname_to_a_variable() {
-        // by using ⌘⌥V | Ctrl+Alt+V
+        // extract variable by using ⌘⌥V | Ctrl+Alt+V and replace the text
         assertThat("Hello firstname!").isEqualTo("Hello David!");
     }
 
     @Test
     void Koan02_extract_parameter_firstname() {
-
+        // Extract parameter inside the sayHello function by selecting firstname and using ⌘⌥V | Ctrl+Alt+V
         assertThat(sayHello()).isEqualTo("Hello David!");
+        assertThat(sayHello()).isEqualTo("Hello Vincent!");
     }
 
     String sayHello() {
