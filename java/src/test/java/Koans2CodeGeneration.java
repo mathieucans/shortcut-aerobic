@@ -10,7 +10,7 @@ class Koans2CodeGeneration {
         String buildResult = "code";
 
         // Uncomment following line
-        //buildResult = new RobotCode().repeat(buildResult)
+        //buildResult = new RobotCode().repeat(buildResult);
 
         assertThat(buildResult).isEqualTo("codecode");
     }
@@ -20,7 +20,7 @@ class Koans2CodeGeneration {
         // by using ^T | Ctrl+Shift+Alt+T
 
         // Uncomment this line
-        // const language = English()
+        // English language = English();
         // Comment this line
         French language = new French();
         SayHello sayHello = new SayHello(language);
