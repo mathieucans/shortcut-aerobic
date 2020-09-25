@@ -3,7 +3,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class Koan0BasiscsNavigateSelection {
+class Koans1BasicsNavigateSelection {
     @Test
     void Koan01_This_test_pass_navigate_to_end_block_and_delete_last_failing_test() {
         // TIPS : on small keybopard, you can navigate to end of file by using ⌘A,→  / Ctrl+A, →
