@@ -16,26 +16,26 @@ class Koans0BasicsStart {
     }
 
     @Test
-    void Koan03_you_can_also_navigate_to_next_failing_test(){
-        // by using F2
-        assertThat("it's quite easier isn't it ?").isEqualTo("then make this test pass");
-    }
-
-    @Test
-    void Koan04_make_this_test_pass_and_rerun_only_this_test(){
+    void Koan03_make_this_test_pass_and_rerun_only_this_test(){
         //  by using ^⇧R | Crtl+Shift+F10 with cursor inside this test scope
         assertThat(true).isFalse();
     }
 
     @Test
-    void Koan05_make_this_test_pass_and_rerun_all_test() {
+    void Koan04_make_this_test_pass_and_rerun_all_test() {
         //  by using ^⇧R | Crtl+Shift+F10 with cursor between two tests
         assertThat(true).isFalse();
     }
 
     @Test
-    void Koan06_you_can_open_run_menu() {
+    void Koan05_you_can_open_run_menu() {
         // by using ^⌥R | Shift+Alt+F10 and select the configuration you want
+        assertThat(true).isFalse();
+    }
+
+    @Test
+    void Koan06_looking_for_un_unknown_shortcut() {
+        // you can always look for command with ⌘⇧A | Ctrl+Shift+A and type your command (for exemple "delete line")
         assertThat(true).isFalse();
     }
 
