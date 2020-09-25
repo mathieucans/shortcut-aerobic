@@ -19,7 +19,8 @@ class Koans2CodeGeneration {
 
     @Test
     void Koan02_extract_interface_Language_of_French() {
-        // by using ^T | Ctrl+Shift+Alt+T
+        // To extract interface, display the refactoring menu by using ^T | Ctrl+Shift+Alt+T
+        // Check the methods you want to have in your interface and make English implement it by using ⌥⏎ | Alt+Enter
 
         // Uncomment this line
         // English language = new English();
