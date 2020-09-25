@@ -4,7 +4,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class Koans2CodeGeneration {
     @Test
-    void Koans21_uncomment_and_generate_class_and_method() {
+    void Koan01_uncomment_and_generate_class_and_method() {
         // by unsing ⌥⏎ | Alt+Enter
         // TIPS : you can navigate through error code by using F2
         String buildResult = "code";
@@ -15,7 +15,7 @@ class Koans2CodeGeneration {
     }
 
     @Test
-    void Koans22_extract_interface_Language_of_French() {
+    void Koan02_extract_interface_Language_of_French() {
         // by using ^T | Ctrl+Shift+Alt+T
 
         // Uncomment this line
