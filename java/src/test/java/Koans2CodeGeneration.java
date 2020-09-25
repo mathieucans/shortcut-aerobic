@@ -1,5 +1,7 @@
 import org.junit.jupiter.api.Test;
 
+import java.text.MessageFormat;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 class Koans2CodeGeneration {
@@ -48,6 +50,6 @@ class SayHello {
     }
 
     String hello() {
-        return "${this.language.hello()} David!";
+        return MessageFormat.format("{0} David!", this.language.hello());
     }
 }
