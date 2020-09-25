@@ -1,9 +1,9 @@
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 
-class `Koan 2 - Generate code by using your IDE` {
+class `Koans 2 - Generate code by using your IDE` {
     @Test
-    fun `01 - Uncomment and generate class and method by unsing ⌥⏎ | Alt+Enter`(){
+    fun `01 - uncomment and generate class and method by unsing ⌥⏎ | Alt+Enter`(){
         // TIPS : you can navigate through error code by using F2
         var buildResult = "code"
 

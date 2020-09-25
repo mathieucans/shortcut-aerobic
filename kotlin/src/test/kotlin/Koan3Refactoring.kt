@@ -4,12 +4,12 @@ import org.junit.jupiter.api.Test
 
 class `Koans 3 - usefull short cut refactoring` {
     @Test
-    fun `extract firstname to a variable by using ⌘⌥V | Ctrl+Alt+V`() {
+    fun `01 - extract firstname to a variable by using ⌘⌥V | Ctrl+Alt+V`() {
         assertThat("Hello firstname!").isEqualTo("Hello David!")
     }
 
     @Test
-    fun `extract parameter firstname by using ⌘⌥P | Ctrl+Alt+P`() {
+    fun `02 - extract parameter firstname by using ⌘⌥P | Ctrl+Alt+P`() {
         fun sayHello(): String {
             return "Hello firstname!"
         }
@@ -18,7 +18,7 @@ class `Koans 3 - usefull short cut refactoring` {
     }
 
     @Test
-    fun `extract field firstname by using ⌘⌥F | Ctrl+Alt+F and affect it in constructor`() {
+    fun `03 - extract field firstname by using ⌘⌥F | Ctrl+Alt+F and affect it in constructor`() {
         class Hello {
             fun say(): String {
                 return "Hello firstname!"
@@ -29,7 +29,7 @@ class `Koans 3 - usefull short cut refactoring` {
     }
 
     @Test
-    fun `extract method hello by using ⌘⌥M | Ctrl+Alt+M`() {
+    fun `04 - extract method hello by using ⌘⌥M | Ctrl+Alt+M`() {
         class Hello(private val lang: String) {
             fun say(firstName: String): String {
                 // Select from the following line
@@ -55,7 +55,7 @@ class `Koans 3 - usefull short cut refactoring` {
     }
 
     @Test
-    fun `move variables into describe scope and init it in  beforeEach function`() {
+    fun `05 - move variables into describe scope and init it in  beforeEach function`() {
         // TIPS : split affectation and declaration by using ⌥⏎ | Alt+Enter
         // then use move Statement up by using ⌘⇧↑ | Ctrl+Shift+Up
         val language = French()

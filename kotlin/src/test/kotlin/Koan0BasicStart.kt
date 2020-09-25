@@ -1,7 +1,7 @@
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 
-class `Koan 0 - Basics - Get started - navigate to to next failing test` {
+class `Koans 0 - Basics - Get started - navigate to to next failing test` {
 
     @Test
     fun `01 - first of all, run all test of this file with cursor on top of the file by using ^⇧R | Ctrl+Shift+F10`() {

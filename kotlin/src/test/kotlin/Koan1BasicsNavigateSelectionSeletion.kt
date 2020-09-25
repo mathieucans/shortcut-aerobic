@@ -2,7 +2,7 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 
-class `Koan 1 - navigate, selection and deletion` {
+class `Koans 1 - navigate, selection and deletion` {
 
     @Test
     fun `01 - This test pass, navigate to end block and delete last failing test`() {
