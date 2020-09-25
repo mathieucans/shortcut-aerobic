@@ -57,7 +57,7 @@ class Koans1BasicsNavigateSelection {
 
     @Test
     void Koan08_navigate_to_sayYes_definition() {
-        // by using ⌘B | Ctrl+B
+        // by using ⌘B | Ctrl+B and change behaviour to make this test pass
         assertThat(new ModuleA().sayYes()).isEqualTo("yes");
     }
 
