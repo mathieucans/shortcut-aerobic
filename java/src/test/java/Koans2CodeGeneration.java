@@ -9,6 +9,7 @@ class Koans2CodeGeneration {
         // TIPS : you can navigate through error code by using F2
         String buildResult = "code";
 
+        // Uncomment following line
         //buildResult = new RobotCode().repeat(buildResult)
 
         assertThat(buildResult).isEqualTo("codecode");
