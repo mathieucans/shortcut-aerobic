@@ -11,4 +11,8 @@ Dans chaque language, des tests vous proposent de manipuler le code avec les rac
 Commencez par le basic et laisser vous guider.
 Au fur et à mesure faites passer les tests au vert.
 
-Amusez-vous bien
+Amusez-vous bien!
+
+# Références
+ - Un plugin IntelJ pour apprendre d'autres raccourcis : https://plugins.jetbrains.com/plugin/8554-ide-features-trainer
+ - Atelier maîtriser son IDE : https://github.com/sanlaville/master-your-ide
