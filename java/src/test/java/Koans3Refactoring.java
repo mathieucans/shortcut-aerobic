@@ -69,7 +69,7 @@ class Koans3Refactoring {
     }
 
     @Test
-    void Koan05_move_variables_into_describe_scope_and_init_it_in__beforeEach_function() {
+    void Koan05_move_variables_into_class_scope_and_init_it_in__beforeEach_function() {
         // TIPS : split affectation and declaration by using ⌥⏎ | Alt+Enter
         // then use move Statement up by using ⌘⇧↑ | Ctrl+Shift+Up
         French language = new  French();
