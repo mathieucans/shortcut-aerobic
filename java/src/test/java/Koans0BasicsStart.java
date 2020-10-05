@@ -34,7 +34,7 @@ class Koans0BasicsStart {
     }
 
     @Test
-    void Koan06_looking_for_un_unknown_shortcut() {
+    void Koan06_looking_for_an_unknown_shortcut() {
         // you can always look for command with ⌘⇧A | Ctrl+Shift+A and type your command (for exemple "delete line")
         assertThat(true).isFalse();
     }
