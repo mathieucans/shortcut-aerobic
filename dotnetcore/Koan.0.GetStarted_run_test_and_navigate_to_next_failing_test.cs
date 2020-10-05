@@ -4,6 +4,10 @@ using FluentAssertions;
 
 namespace dotnetcore
 {
+    /// <summary>
+    /// Start by theses koans to be friendly with running test with shortcuts
+    /// </summary>
+    /// Not that all short cut tips are given for resharper with Visual studio scheme
     public class GetStarted_run_test_and_navigate_to_next_failing_test
     {
         [Fact]
