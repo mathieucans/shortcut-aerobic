@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using FluentAssertions;
+﻿using FluentAssertions;
 using Xunit;
 
 namespace dotnetcore
@@ -9,9 +6,21 @@ namespace dotnetcore
     public class Koan02_code_generation
     {
         [Fact]
+        void Koan01_uncomment_and_generate_class_and_method() {
+            var buildResult = "code";
+            // Uncomment following line
+            //buildResult = new RobotCode().repeat(buildResult);
+
+            // Generate class and method by unsing Alt+Enter
+            // TIPS : you can navigate through error code by using F8
+
+            buildResult.Should().Be("codecode");
+        }
+
+        [Fact]
         public void Koan01_generate_equality_comparer()
         {
-            // Use Alt+Insrert to generate equality members
+            // Place cursor on class name and use Alt+Insert to generate equality members
             new Person("Pierre", "Dupont").Should().Be(new Person("Pierre", "Dupont"));
         }
 
