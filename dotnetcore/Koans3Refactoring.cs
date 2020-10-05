@@ -15,6 +15,8 @@ namespace dotnetcore
             "Hello firstname!".Should().Be("Hello David!");
         }
 
+        #region Koan02 extract parameter "firstname"
+
         [Fact]
         void Koan02_extract_parameter_firstname()
         {
@@ -27,6 +29,11 @@ namespace dotnetcore
         {
             return "Hello firstname!";
         }
+
+        #endregion
+
+
+        #region Koan03 extract field firstname and affect it in constructor
 
         [Fact]
         void Koan03_extract_field_firstname_and_affect_it_in_constructor()
@@ -45,6 +52,8 @@ namespace dotnetcore
                 return "Hello firstname!";
             }
         }
+
+        #endregion
 
         [Fact]
         void Koan04_extract_method_hello_form_say()
