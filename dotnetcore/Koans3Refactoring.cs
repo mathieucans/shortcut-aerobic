@@ -47,9 +47,9 @@ namespace dotnetcore
         }
 
         [Fact]
-        void Koan04_extract_method_hello()
+        void Koan04_extract_method_hello_form_say()
         {
-            // by using ⌘⌥M | Ctrl+Alt+M
+            // Go to say definition and extract the hello method by using Ctrl+R,M
             new HelloForKoan04("fr").say("David").Should().Be("Bonjour David!");
             new HelloForKoan04("en").say("David").Should().Be("HelloForKoan04 David!");
             new HelloForKoan04("hsqlf").say("David").Should().Be(" David!");
