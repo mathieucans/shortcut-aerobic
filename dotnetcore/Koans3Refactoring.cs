@@ -31,7 +31,7 @@ namespace dotnetcore
         [Fact]
         void Koan03_extract_field_firstname_and_affect_it_in_constructor()
         {
-            // extract field by selecting firstname and by using ⌘⌥F | Ctrl+Alt+F
+            // extract field by selecting firstname and by using Ctrl+R,F
             // Choose constructor initialization
             // then extract parameter to make test pass
             new HelloForKoan03().say().Should().Be("Hello David!");
