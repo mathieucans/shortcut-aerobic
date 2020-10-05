@@ -12,7 +12,7 @@ class Koans3Refactoring {
 
     @Test
     void Koan02_extract_parameter_firstname() {
-        // Extract parameter inside the sayHello function by selecting firstname and using ⌘⌥V | Ctrl+Alt+V
+        // Extract parameter inside the sayHello function by selecting firstname and using ⌘⌥P | Ctrl+Alt+P
         assertThat(sayHello()).isEqualTo("Hello David!");
         assertThat(sayHello()).isEqualTo("Hello Vincent!");
     }

@@ -11,14 +11,14 @@ namespace dotnetcore
         [Fact]
         void Koan01_extract_firstname_to_a_variable()
         {
-            // extract variable by using ⌘⌥V | Ctrl+Alt+V and replace the text
+            // extract variable by using Ctrl+R,V and replace the text
             "Hello firstname!".Should().Be("Hello David!");
         }
 
         [Fact]
         void Koan02_extract_parameter_firstname()
         {
-            // Extract parameter inside the SayHello function by selecting firstname and using ⌘⌥V | Ctrl+Alt+V
+            // Extract parameter inside the SayHello function by selecting firstname and using Ctrl+R,P
             SayHello().Should().Be("Hello David!");
             SayHello().Should().Be("Hello Vincent!");
         }
