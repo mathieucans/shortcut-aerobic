@@ -8,5 +8,10 @@ namespace dotnetcore.src
         {
             return "no";
         }
+
+        public String Test()
+        {
+            return "youpii";
+        }
     }
 }

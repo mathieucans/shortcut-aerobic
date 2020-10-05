@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using dotnetcore.src;
+﻿using dotnetcore.src;
 using FluentAssertions;
 using Xunit;
 
@@ -10,9 +7,10 @@ namespace dotnetcore
     public class Koan01_basic_navigation_selection_deletion
     {
         [Fact]
-        public void Koan01_Navigate_to_end_of_file()
-        {
-            "by using Ctrl+END".Should().Be("done");
+        void Koan01_this_test_pass_navigate_to_end_block_and_delete_last_failing_test() {
+            // Use Ctrl+END
+            // TIPS : on laptop keyboard, you can navigate to end of file by using ⌘A,→  / Ctrl+A, →
+            true.Should().BeTrue();
         }
 
         [Fact]
@@ -42,37 +40,52 @@ namespace dotnetcore
         }
 
         [Fact]
-        public void Koan06_Select_next_occurence()
+        void Koan06_extend_selection_code_scope() {
+            // extend selection depends on scope, by using Ctrl+W select only what needed in line below
+            new ModuleA().Test().Should().Be("youpii");
+            // and paste it in the folowing assertion
+            "**** REPLACE ME ****".Should().Be("new ModuleA().test()");
+        }
+
+        [Fact]
+        public void Koan07_Select_next_occurence()
         {
             // Next occurence selection is not available neither in Visual Studio nor Resharper
             // To enable this amazing feature install NextOccurence extension to VisualStudio https://marketplace.visualstudio.com/items?itemName=thomaswelen.SelectNextOccurrence
             // Then map next Occurence to your favorite short cut (Intellij programers use Alt+J on windows)
-            var message = "efjklfjdlif sdkldjskd ; jfdskljfdklfj ,...";
-            message += "efjklfjdlif sdkldjskd ; jfdskljfdklfj ,...";
-            message += "efjklfjdlif sdkldjskd ; jfdskljfdklfj ,...";
-            message += "efjklfjdlif sdkldjskd ; jfdskljfdklfj ,...";
-            message += "efjklfjdlif sdkldjskd ; jfdskljfdklfj ,...";
-            message += "efjklfjdlif sdkldjskd ; jfdskljfdklfj ,;dk ...;";
+            var message = "Un tiens vaut mieux que deux tu l'auras.";
+            message += "Un tiens vaut mieux que deux tu l'auras.";
+            message += "Un tiens vaut mieux que deux tu l'auras.";
+            message += "Un tiens vaut mieux que deux tu l'auras.";
+            message += "Un tiens vaut mieux que deux tu l'auras.";
+            message += "Un tiens vaut mieux que deux tu l'auras.";
             message.Should().Be("ha ha ha ha ha ha ");
         }
 
         [Fact]
-        public void Koan07_Navigate_to_sayYes_definition()
+        public void Koan08_Navigate_to_sayYes_definition()
         {
             // by using Ctrl+B
             new ModuleA().SayYes().Should().Be("yes");
         }
 
         [Fact]
-        public void Koan07_Navigate_to_ModuleA_class()
+        public void Koan09_Navigate_to_ModuleA_class()
         {
             "by using Ctrl+Alt+Shift+N".Should().Be("done");
         }
         
         [Fact]
-        public void Koan08_Navigate_to_ModuleA_file()
+        public void Koan10_Navigate_to_ModuleA_file()
         {
             "by using Ctrl+Shift+N".Should().Be("done");
+        }
+
+        [Fact]
+        void Koan11_delete_this_test_and_navigate_to_top_of_file() {
+            // TIPS on laptop keyboard you can using Ctrl+A,←
+            // You can delete the folowing line by using Ctrl+L that cut the entire line
+            Assert.False(true,"Delete this test and navigate to top");
         }
 
     }
