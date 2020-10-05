@@ -7,7 +7,7 @@ namespace dotnetcore
     /// Start by theses koans to be friendly with running test with shortcuts
     /// </summary>
     /// Not that all short cut tips are given for resharper with Visual studio scheme
-    public class GetStarted_run_test_and_navigate_to_next_failing_test
+    public class GetStarted_run_test_and_navigate_to_through_tests
     {
         [Fact]
         public void Koan01_Run_all_test_of_the_solution()
