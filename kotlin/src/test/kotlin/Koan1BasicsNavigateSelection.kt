@@ -4,6 +4,8 @@ import org.junit.jupiter.api.Test
 
 class `Koans 1 - navigate, selection and deletion` {
 
+    private val ratio = 0.5
+
     @Test
     fun `01 - This test pass, navigate to end block and delete last failing test`() {
         // TIPS : on small keybopard, you can navigate to end of file by using ⌘A,→  / Ctrl+A, →
@@ -61,6 +63,12 @@ class `Koans 1 - navigate, selection and deletion` {
     @Test
     fun `09 - Delete this test and navigate to to of file by using ⌘A,←`() {
         Assertions.fail<String>("Delete this test and navigate to top")
+    }
+
+    @Test
+    fun `10 - Navigate to file structure to change ratio`() {
+        // Use ⌘F12 / Ctrl+F12 to navigate to ratio declaration
+        assertThat(3* ratio).isEqualTo(6)
     }
 
 }
