@@ -1,5 +1,7 @@
 import ModuleA from "../src/ModuleA";
 
+const ratio = 0.5;
+
 describe('navigate, selection and deletion', () => {
     /// Navigate to end of file by using ⌘A,→  / Ctrl+A, →
     test('This test pass, use ⌘⌥] to navigate to end block and delete last failing test', () => {
@@ -47,5 +49,9 @@ describe('navigate, selection and deletion', () => {
 
     test('Delete this test and navigate to to of file by using ⌘A,←', () => {
         fail('Delete this test and navigate to top');
+    });
+
+    test('Navigate to file structure to change ratio by using ⌘F12 / Ctrl+F12', () => {
+        expect(3*ratio).toEqual(6);
     });
 });
