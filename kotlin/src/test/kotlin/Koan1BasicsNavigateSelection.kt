@@ -32,12 +32,14 @@ class `Koans 1 - navigate, selection and deletion` {
     }
 
     @Test
-    fun `05 - Extend selection by using ⌥↑ | Ctrl+W`() {
+    fun `05 - Extend selection`() {
+        // by using ⌥↑ | Ctrl+W
         assertThat("***** SELECT ME WITH EXTEND SELECTION*****").isEqualTo("selected")
     }
 
     @Test
-    fun `06 - Extend selection code scope by using ⌥↑ | Ctrl+W`() {
+    fun `06 - Extend selection code scope`() {
+        // by using ⌥↑ | Ctrl+W
         // extend selection depends on scope, by using ⌥↑ | Ctrl+W select only what needed in line below
         assertThat(ModuleA ().test()).isEqualTo("youpii")
         // and paste it in the folowing assertion
@@ -45,7 +47,8 @@ class `Koans 1 - navigate, selection and deletion` {
     }
 
     @Test
-    fun `07 - Select next occurrence by using ^G | Alt+J then edit multi lines`() {
+    fun `07 - Select next occurrence then edit multi lines`() {
+        // by using ^G | Alt+J
         var message = "Un tiens vaut mieux que deux tu l'auras."
         message += "Un tiens vaut mieux que deux tu l'auras."
         message += "Un tiens vaut mieux que deux tu l'auras."
@@ -56,12 +59,14 @@ class `Koans 1 - navigate, selection and deletion` {
     }
 
     @Test
-    fun `08 - Navigate to sayYes definition by using ⌘B | Ctrl+B`() {
+    fun `08 - Navigate to sayYes definition`() {
+        // by using ⌘B | Ctrl+B
         assertThat(ModuleA ().sayYes()).isEqualTo("yes")
     }
 
     @Test
-    fun `09 - Delete this test and navigate to to of file by using ⌘A,←`() {
+    fun `09 - Delete this test and navigate top of file`() {
+        // by using ⌘A,← | Ctrl+A,←
         Assertions.fail<String>("Delete this test and navigate to top")
     }
 
