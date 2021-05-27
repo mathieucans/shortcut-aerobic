@@ -3,7 +3,8 @@ import org.junit.jupiter.api.Test
 
 class `Koans 2 - Generate code by using your IDE` {
     @Test
-    fun `01 - uncomment and generate class and method by unsing ⌥⏎ | Alt+Enter`(){
+    fun `01 - uncomment and generate class and method`(){
+        // by unsing ⌥⏎ | Alt+Enter
         // TIPS : you can navigate through error code by using F2
         var buildResult = "code"
 
@@ -13,7 +14,8 @@ class `Koans 2 - Generate code by using your IDE` {
     }
 
     @Test
-    fun `02 - extract interface Language of French by using ^T | Ctrl+Shift+Alt+T`(){
+    fun `02 - extract interface Language of French`(){
+        // by using ^T | Ctrl+Shift+Alt+T
         // Uncomment this line
         // const language = English()
         // Comment this line
