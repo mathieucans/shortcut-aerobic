@@ -65,15 +65,17 @@ class `Koans 1 - navigate, selection and deletion` {
     }
 
     @Test
-    fun `09 - Delete this test and navigate top of file`() {
+    fun `09 - Navigate to file structure to change ratio`() {
+        // Use ⌘F12 / Ctrl+F12 to navigate to ratio declaration
+        assertThat(3* ratio).isEqualTo(6)
+    }
+
+    @Test
+    fun `LAST - Delete this test and navigate top of file`() {
         // by using ⌘A,← | Ctrl+A,←
         Assertions.fail<String>("Delete this test and navigate to top")
     }
 
-    @Test
-    fun `10 - Navigate to file structure to change ratio`() {
-        // Use ⌘F12 / Ctrl+F12 to navigate to ratio declaration
-        assertThat(3* ratio).isEqualTo(6)
-    }
+
 
 }
