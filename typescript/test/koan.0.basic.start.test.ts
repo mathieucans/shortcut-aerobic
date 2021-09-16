@@ -19,11 +19,14 @@ describe('Get started :  navigate to to next failing test', () => {
         expect(true).toBeFalsy();
     });
 
-    test('you can open next koan by Navigate to file by using ⌘⇧O / Ctrl+Shift+N', () => {
+    test('you can open run menu by using ^⌥R | Shift+Alt+F10 and select the configuration you want', () => {
+        // TIP if you choose Edit configuration,
+        // you can select one and modify it to run all test in your workspace
+        // Then you will be abble to run all your project tests by using ^⌥R | Shift+Alt+F10
         expect(true).toBeFalsy();
     });
 
-    test('07 - you can open run menu by using ^⌥R | Shift+Alt+F10 and select the configuration you want', () => {
+    test('you can open next koan by Navigate to file by using ⌘⇧O / Ctrl+Shift+N', () => {
         expect(true).toBeFalsy();
     });
 
