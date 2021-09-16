@@ -47,11 +47,11 @@ describe('navigate, selection and deletion', () => {
         expect(new ModuleA().sayYes()).toEqual('yes');
     });
 
-    test('Delete this test and navigate to to of file by using ⌘A,←', () => {
-        fail('Delete this test and navigate to top');
-    });
-
     test('Navigate to file structure to change ratio by using ⌘F12 / Ctrl+F12', () => {
         expect(3*ratio).toEqual(6);
+    });
+
+    test('Delete this test and navigate to to of file by using ⌘A,←', () => {
+        fail('Delete this test and navigate to top');
     });
 });
