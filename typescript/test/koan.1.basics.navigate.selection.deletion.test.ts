@@ -4,7 +4,7 @@ const ratio = 0.5;
 
 describe('navigate, selection and deletion', () => {
     /// Navigate to end of file by using ⌘A,→  / Ctrl+A, →
-    test('This test pass, use ⌘⌥] to navigate to end block and delete last failing test', () => {
+    test('This test pass, use ⌘A,→  / Ctrl+A, → to navigate to end block and delete last failing test', () => {
         expect(new ModuleA().test()).toEqual('youpii');
     });
 
