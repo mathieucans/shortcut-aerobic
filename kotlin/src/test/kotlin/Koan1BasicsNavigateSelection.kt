@@ -41,9 +41,9 @@ class `Koans 1 - navigate, selection and deletion` {
     fun `06 - Extend selection code scope`() {
         // by using ⌥↑ | Ctrl+W
         // extend selection depends on scope, by using ⌥↑ | Ctrl+W select only what needed in line below
-        assertThat(ModuleA ().test()).isEqualTo("youpii")
+        assertThat(ModuleA().test()).isEqualTo("youpii")
         // and paste it in the folowing assertion
-        assertThat("***** REPLACE ME *****").isEqualTo("new ModuleA().test()")
+        assertThat("***** REPLACE ME *****").isEqualTo("ModuleA().test()")
     }
 
     @Test
