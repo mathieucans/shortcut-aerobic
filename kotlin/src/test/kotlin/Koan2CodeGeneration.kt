@@ -14,7 +14,7 @@ class `Koans 2 - Generate code by using your IDE` {
     }
 
     @Test
-    fun `02 - extract interface Language of French`(){
+    fun `02 - extract interface Language from French`(){
         // by using ^T | Ctrl+Shift+Alt+T
         // Uncomment this line
         // val language = English()
