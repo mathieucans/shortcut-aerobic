@@ -8,7 +8,7 @@ class `Koans 2 - Generate code by using your IDE` {
         // TIPS : you can navigate through error code by using F2
         var buildResult = "code"
 
-        //buildResult = new RobotCode().repeat(buildResult)
+        //buildResult = RobotCode().repeat(buildResult)
 
         assertThat(buildResult).isEqualTo("codecode")
     }
