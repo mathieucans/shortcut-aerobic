@@ -22,7 +22,7 @@ class `Koans 0 - Basics - Get started - navigate to to next failing test` {
     }
 
     @Test
-    fun `04 - make this test pass and rerun all test`() {
+    fun `04 - make this test pass and rerun all test of this class`() {
         // by using ^⇧R | Crtl+Shift+F10 with cursor between two tests
         assertThat(true).isFalse()
     }
