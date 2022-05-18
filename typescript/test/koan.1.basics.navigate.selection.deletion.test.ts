@@ -3,37 +3,41 @@ import ModuleA from "../src/ModuleA";
 const ratio = 0.5;
 
 describe('navigate, selection and deletion', () => {
-    /// Navigate to end of file by using ⌘A,→  / Ctrl+A, →
-    test('This test pass, use ⌘A,→  / Ctrl+A, → to navigate to end block and delete last failing test', () => {
+    test('01 - This test pass, navigate to end block and delete last failing test', () => {
+        // TIPS : on small keybopard, you can navigate to end of file by using ⌘A,→  / Ctrl+A, →
         expect(new ModuleA().test()).toEqual('youpii');
     });
 
-    test('Deletion to next word', () => {
+    test('02 - Deletion to next word', () => {
         // Delete all unused spaces by using delete to Word End ⌥⌦ / Ctrl+Delete
         expect('                             to much spaces kill spaces').not.toContain('    ');
     });
 
-    test('Deletion to word start word', () => {
+    test('03 - Deletion to word start word', () => {
         // Delete MouseForEver by using delete to Word Start ⌥⌫ / Ctrl+Backspace
         expect('delete the last straw!MouseForEver').not.toContain('MouseForEver');
     });
 
-    test('Delete the failing line', () => {
+    test('04 - Delete the failing line', () => {
         let deleteUnusedLine = 'This test should pass';
         deleteUnusedLine += '*** delete me by using ⌘⌫ / Ctrl+Y ****';
         expect(deleteUnusedLine).toEqual('This test should pass');
     });
 
-    test('Extend selection by using ⌥↑ / Ctrl+W', () => {
+    test('05 - Extend selection', () => {
+        // by using ⌥↑ | Ctrl+W
         expect(`***** SELECT ME WITH EXTEND SELECTION*****`).toEqual('selected')
     });
 
-    test('Extend selection code scope by using ⌥↑ / Ctrl+W', () => {
+    test('06 - Extend selection code scope', () => {
+        // by using ⌥↑ | Ctrl+W
+        // extend selection depends on scope, by using ⌥↑ | Ctrl+W select only what needed in line below
         expect(new ModuleA().test()).toEqual('youpii');
         expect(`***** REPLACE ME *****`).toEqual('new ModuleA().test()')
     });
 
-    test('Select next occurrence by using ^G / Alt+J then edit multi lines', () => {
+    test('07 - Select next occurrence then edit multi lines', () => {
+        // by using ^G | Alt+J
         let message = `Un tiens vaut mieux que deux tu l'auras.`;
         message += `Un tiens vaut mieux que deux tu l'auras.`;
         message += `Un tiens vaut mieux que deux tu l'auras.`;
@@ -43,15 +47,18 @@ describe('navigate, selection and deletion', () => {
         expect(message).toEqual('ha ha ha ha ha ha ');
     });
 
-    test('Navigate to sayYes definition by using ⌘B / Ctrl+B', () => {
+    test('08 - Navigate to sayYes definition', () => {
+        // by using ⌘B | Ctrl+B and change behaviour to make this test pass
         expect(new ModuleA().sayYes()).toEqual('yes');
     });
 
-    test('Navigate to file structure to change ratio by using ⌘F12 / Ctrl+F12', () => {
+    test('09 - Navigate to file structure to change ratio', () => {
+        // Use ⌘F12 / Ctrl+F12 to navigate to ratio declaration
         expect(3*ratio).toEqual(6);
     });
 
-    test('Delete this test and navigate to to of file by using ⌘A,←', () => {
+    test('LAST - Delete this test and navigate top of file', () => {
+        // by using ⌘A,← | Ctrl+A,←
         fail('Delete this test and navigate to top');
     });
 });
