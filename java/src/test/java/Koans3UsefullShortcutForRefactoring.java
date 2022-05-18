@@ -12,7 +12,7 @@ class Koans3UsefullShortcutForRefactoring {
 
     @Test
     void Koan02_extract_parameter_firstname() {
-        // Extract parameter inside the sayHello function by selecting firstname and using ⌘⌥P | Ctrl+Alt+P
+        // Extract firstname as parameter inside the sayHello function by using ⌘⌥P | Ctrl+Alt+P
         assertThat(sayHello()).isEqualTo("Hello David!");
         assertThat(sayHello()).isEqualTo("Hello Vincent!");
     }
@@ -38,6 +38,8 @@ class Koans3UsefullShortcutForRefactoring {
 
     @Test
     void Koan04_extract_method_hello() {
+        // This test already passed.
+        // Refactoring Hello class to extract a method that say hello
         class Hello {
             private String lang;
 

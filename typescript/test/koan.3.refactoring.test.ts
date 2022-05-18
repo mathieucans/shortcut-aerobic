@@ -11,7 +11,7 @@ describe('usefull shortcuts for refactoring.', () => {
     });
 
     test('02 - extract parameter firstname', () => {
-        // Extract parameter inside the sayHello function by using ⌘⌥P | Ctrl+Alt+P
+        // Extract firstname as parameter inside the sayHello function by using ⌘⌥P | Ctrl+Alt+P
         function sayHello() {
             return `Hello firstname!`;
         }
@@ -33,6 +33,8 @@ describe('usefull shortcuts for refactoring.', () => {
     });
 
     test('04 - extract method hello', () => {
+        // This test already passed.
+        // Refactoring Hello class to extract a method that say hello
         class Hello {
             constructor(private lang: string) {
             }

@@ -12,7 +12,7 @@ class Koans3UsefullShortcutForRefactoring {
 
     @Test
     fun `02 - extract parameter firstname`() {
-        // Extract parameter inside the sayHello function by using ⌘⌥P | Ctrl+Alt+P
+        // Extract firstname as parameter inside the sayHello function by using ⌘⌥P | Ctrl+Alt+P
         fun sayHello(): String {
             return "Hello firstname!"
         }
@@ -36,6 +36,8 @@ class Koans3UsefullShortcutForRefactoring {
 
     @Test
     fun `04 - extract method hello`() {
+        // This test already passed.
+        // Refactoring Hello class to extract a method that say hello
         class Hello(private val lang: String) {
             fun say(firstName: String): String {
                 // Extract method from the following line by using ⌘⌥M | Ctrl+Alt+M
