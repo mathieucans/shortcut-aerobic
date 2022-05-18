@@ -1,9 +1,11 @@
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
-
 import static org.assertj.core.api.Assertions.assertThat;
 
 class Koans1BasicsNavigateSelection {
+
+    private final double ratio = 0.5;
+
     @Test
     void Koan01_this_test_pass_navigate_to_end_block_and_delete_last_failing_test() {
         // TIPS : on laptop keyboard, you can navigate to end of file by using ⌘A,→  / Ctrl+A, →
@@ -62,7 +64,13 @@ class Koans1BasicsNavigateSelection {
     }
 
     @Test
-    void Koan09_delete_this_test_and_navigate_to_top_of_file() {
+    void Koan09_Navigate_to_file_structure_to_change_ratio(){
+        // Use ⌘F12 / Ctrl+F12 to navigate to ratio declaration
+        assertThat(3* ratio).isEqualTo(6);
+    }
+
+    @Test
+    void Koan10_delete_this_test_and_navigate_to_top_of_file() {
         // TIPS on laptop keyboard you can using ⌘A,←
         Assertions.fail("Delete this test and navigate to top");
     }
