@@ -5,7 +5,8 @@ import org.junit.jupiter.api.Test
 class Koans3UsefullShortcutForRefactoring {
     @Test
     fun `01 - extract firstname to a variable`() {
-        // extract variable by using ⌘⌥V | Ctrl+Alt+V
+        // Extract firstname variable by using ⌘⌥V | Ctrl+Alt+V
+        // And make this test pass
         assertThat("Hello firstname!").isEqualTo("Hello David!")
     }
 

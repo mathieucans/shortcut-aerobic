@@ -5,7 +5,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 class Koans3UsefullShortcutForRefactoring {
     @Test
     void Koan01_extract_firstname_to_a_variable() {
-        // extract variable by using ⌘⌥V | Ctrl+Alt+V and replace the text
+        // extract firstname variable by using ⌘⌥V | Ctrl+Alt+V
+        // and replace the text to make this test pass
         assertThat("Hello firstname!").isEqualTo("Hello David!");
     }
 

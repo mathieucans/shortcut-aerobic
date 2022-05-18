@@ -4,7 +4,9 @@ describe('usefull shortcuts for refactoring.', () => {
     });
 
     test('01 - extract firstname to a variable', () => {
-        // extract variable by using ⌘⌥V | Ctrl+Alt+V
+        // Replace with template string by using ⌥⏎ / Alt+Enter
+        // Then extract firstname variable by using ⌘⌥V | Ctrl+Alt+V
+        // And make this test pass
         expect('Hello firstname!').toEqual('Hello David!');
     });
 
