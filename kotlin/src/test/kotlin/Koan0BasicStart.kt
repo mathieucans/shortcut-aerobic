@@ -1,7 +1,13 @@
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 
-class `Koans 0 - Basics - Get started - navigate to to next failing test` {
+// Get started : navigate to to next failing test
+class Koans0BasicStart {
+    @Test
+    fun `00 - One shortcut to rule them all`(){
+        // use ⌘⇧A | Ctrl+Shift+A and search a command to toggle case
+        assertThat("SHOULD BE LOWER CASE").isEqualTo("should be lower case")
+    }
 
     @Test
     fun `01 - first of all, run all test of this file with cursor on top of the file`() {
