@@ -1,7 +1,7 @@
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 
-class `Koans 2 - Generate code by using your IDE` {
+class Koan2GenerateCodeByUsingYourIde {
     @Test
     fun `01 - uncomment and generate class and method`(){
         // by unsing ⌥⏎ | Alt+Enter

@@ -2,7 +2,7 @@ import org.assertj.core.api.Assertions
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 
-class `Koans 1 - navigate, selection and deletion` {
+class Koan1BasicsNavigateSelectionAndDeletion {
 
     private val ratio = 0.5
 
