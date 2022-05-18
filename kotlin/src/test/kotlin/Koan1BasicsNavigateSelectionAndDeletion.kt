@@ -60,7 +60,7 @@ class Koan1BasicsNavigateSelectionAndDeletion {
 
     @Test
     fun `08 - Navigate to sayYes definition`() {
-        // by using ⌘B | Ctrl+B
+        // by using ⌘B | Ctrl+B and change behaviour to make this test pass
         assertThat(ModuleA ().sayYes()).isEqualTo("yes")
     }
 
