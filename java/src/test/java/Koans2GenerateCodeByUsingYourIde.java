@@ -16,7 +16,13 @@ class Koans2GenerateCodeByUsingYourIde {
     }
 
     @Test
-    void Koan02_extract_interface_Language_of_French() {
+    void Koan02_surround_with_try_catch() throws Exception {
+        // Surround the following line with try catch by using ⌥⌘T | Ctrl+Alt+T
+        throw new Exception("surround me with try catch");
+    }
+
+    @Test
+    void Koan03_extract_interface_Language_of_French() {
         // Tips : To extract interface, display the refactoring menu by using ^T | Ctrl+Shift+Alt+T
         // Check the methods you want to have in your interface and make English implement it by using ⌥⏎ | Alt+Enter
 
