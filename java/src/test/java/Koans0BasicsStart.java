@@ -40,8 +40,11 @@ class Koans0BasicsStart {
     }
 
     @Test
-    void Koan06_looking_for_an_unknown_shortcut() {
-        // you can always look for command with ⌘⇧A | Ctrl+Shift+A and type your command (for exemple "delete line")
+    void Koan06_you_can_open_run_menu_and_select_the_configuration_you_want() {
+        // by using ^⌥R | Shift+Alt+F10
+        // TIP if you choose Edit configuration,
+        // you can select one and modify it to run all test in your workspace
+        // Then you will be abble to run all your project tests by using ^⌥R | Shift+Alt+F10
         assertThat(true).isFalse();
     }
 

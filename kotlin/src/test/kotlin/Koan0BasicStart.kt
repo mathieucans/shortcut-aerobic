@@ -40,7 +40,16 @@ class Koans0BasicStart {
     }
 
     @Test
-    fun `06 - you can open next koan by Navigate to file`() {
+    fun `06 - you can open run menu and select the configuration you want`() {
+        // by using ^⌥R | Shift+Alt+F10
+        // TIP if you choose Edit configuration,
+        // you can select one and modify it to run all test in your workspace
+        // Then you will be abble to run all your project tests by using ^⌥R | Shift+Alt+F10
+        assertThat(true).isFalse()
+    }
+
+    @Test
+    fun `07 - you can open next koan by Navigate to file`() {
         // by using ⌘⇧O | Ctrl+Shift+N
         assertThat(true).isFalse()
     }
