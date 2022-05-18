@@ -1,10 +1,8 @@
 import org.junit.jupiter.api.Test;
-
 import java.text.MessageFormat;
-
 import static org.assertj.core.api.Assertions.assertThat;
 
-class Koans2CodeGeneration {
+class Koans2GenerateCodeByUsingYourIde {
     @Test
     void Koan01_uncomment_and_generate_class_and_method() {
         // by unsing ⌥⏎ | Alt+Enter
@@ -19,7 +17,7 @@ class Koans2CodeGeneration {
 
     @Test
     void Koan02_extract_interface_Language_of_French() {
-        // To extract interface, display the refactoring menu by using ^T | Ctrl+Shift+Alt+T
+        // Tips : To extract interface, display the refactoring menu by using ^T | Ctrl+Shift+Alt+T
         // Check the methods you want to have in your interface and make English implement it by using ⌥⏎ | Alt+Enter
 
         // Uncomment this line
