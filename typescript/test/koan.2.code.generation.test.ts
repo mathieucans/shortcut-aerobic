@@ -1,5 +1,6 @@
 describe('Generate code by using your IDE', () => {
-    test('Uncomment and generate class and method by unsing ⌥⏎ / Alt+Enter', () => {
+    test('01 - uncomment and generate class and method', () => {
+        // by unsing ⌥⏎ | Alt+Enter
         // TIPS : you can navigate through error code by using F2
         let buildResult = "code";
 
@@ -8,7 +9,10 @@ describe('Generate code by using your IDE', () => {
         expect(buildResult).toEqual("codecode");
     });
 
-    test('extract interface Language of French by using ^T / Ctrl+Shift+Alt+T', () => {
+    test('02 - extract interface Language from French', () => {
+        // Tips : To extract interface, display the refactoring menu by using ^T | Ctrl+Shift+Alt+T
+        // Check the methods you want to have in your interface and make English implement it by using ⌥⏎ | Alt+Enter
+
         // Uncomment this line
         // const language = new English();
         // Comment this line
