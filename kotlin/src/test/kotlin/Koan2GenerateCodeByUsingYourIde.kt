@@ -15,7 +15,9 @@ class Koan2GenerateCodeByUsingYourIde {
 
     @Test
     fun `02 - extract interface Language from French`(){
-        // by using ^T | Ctrl+Shift+Alt+T
+        // Tips : To extract interface, display the refactoring menu by using ^T | Ctrl+Shift+Alt+T
+        // Check the methods you want to have in your interface and make English implement it by using ⌥⏎ | Alt+Enter
+
         // Uncomment this line
         // val language = English()
         // Comment this line
