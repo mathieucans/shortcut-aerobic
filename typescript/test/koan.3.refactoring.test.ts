@@ -1,13 +1,15 @@
-describe('usefull short cut refactoring.', () => {
-    test('replace simple quote with template string first by using ⌥⏎ / Alt+Enter', () => {
+describe('usefull shortcuts for refactoring.', () => {
+    test('Bonus : replace simple quote with template string first by using ⌥⏎ / Alt+Enter', () => {
         expect('C est le déluge!').toEqual(`C'est le déluge!`);
     });
 
-    test('extract firstname to a variable by using ⌘⌥V / Ctrl+Alt+V', () => {
+    test('01 - extract firstname to a variable', () => {
+        // extract variable by using ⌘⌥V | Ctrl+Alt+V
         expect('Hello firstname!').toEqual('Hello David!');
     });
 
-    test('extract parameter firstname by using ⌘⌥P / Ctrl+Alt+P', () => {
+    test('02 - extract parameter firstname', () => {
+        // Extract parameter inside the sayHello function by using ⌘⌥P | Ctrl+Alt+P
         function sayHello() {
             return `Hello firstname!`;
         }
@@ -15,7 +17,10 @@ describe('usefull short cut refactoring.', () => {
         expect(sayHello()).toEqual('Hello David!');
     });
 
-    test('extract field firstname by using ⌘⌥F / Ctrl+Alt+F and affect it in constructor', () => {
+    test('03 - extract field firstname and affect it in constructor', () => {
+        // extract field by selecting firstname and by using ⌘⌥F | Ctrl+Alt+F
+        // Choose constructor initialization
+        // then extract parameter to make test pass
         class Hello {
             say() {
                 return `Hello firstname!`;
@@ -25,12 +30,12 @@ describe('usefull short cut refactoring.', () => {
         expect(new Hello().say()).toEqual('Hello David!');
     });
 
-    test('extract method hello by using ⌘⌥M / Ctrl+Alt+M', () => {
+    test('04 - extract method hello', () => {
         class Hello {
             constructor(private lang: string) {
             }
             say(firstName: string) {
-                // Select from the following line
+                // // Extract method from the following line by using ⌘⌥M | Ctrl+Alt+M
                 let hello = '';
                 switch (this.lang.toLowerCase()) {
                     case 'fr':
@@ -40,7 +45,7 @@ describe('usefull short cut refactoring.', () => {
                         hello = 'Hello';
                         break;
                 }
-                // to this line to extract method
+                // to this line
                 return `${hello} ${firstName}!`;
             }
         }
@@ -55,7 +60,7 @@ describe('usefull short cut refactoring.', () => {
 
     });
 
-    test('move variables into describe scope and init it in  beforeEach function', () => {
+    test('05 - move variables into describe scope and init it in  beforeEach function', () => {
         // TIPS : split affectation and declaration by using ⌥⏎ / Alt+Enter
         // then use move Statement up by using ⌘⇧↑ / Ctrl+Shift+Up
         const language = new French();
