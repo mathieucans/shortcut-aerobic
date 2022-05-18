@@ -1,9 +1,8 @@
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import static org.assertj.core.api.Assertions.assertThat;
 
-class Koans3Refactoring {
+class Koans3UsefullShortcutForRefactoring {
     @Test
     void Koan01_extract_firstname_to_a_variable() {
         // extract variable by using ⌘⌥V | Ctrl+Alt+V and replace the text
@@ -38,7 +37,6 @@ class Koans3Refactoring {
 
     @Test
     void Koan04_extract_method_hello() {
-        // by using ⌘⌥M | Ctrl+Alt+M
         class Hello {
             private String lang;
 
@@ -46,13 +44,13 @@ class Koans3Refactoring {
                 this.lang = lang;
             }
             String say(String firstName) {
-                // Select from the following line
+                // Extract method from the following line by using ⌘⌥M | Ctrl+Alt+M
                 String hello = "";
                 switch (this.lang.toLowerCase()) {
                     case "fr" : hello = "Bonjour"; break;
                     case "en" : hello = "Hello"; break;
                 }
-                // to this line to extract method
+                // to this line
                 return hello + " " + firstName + "!";
             }
         }

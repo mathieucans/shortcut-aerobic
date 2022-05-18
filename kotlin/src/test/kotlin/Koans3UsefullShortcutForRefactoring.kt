@@ -2,16 +2,16 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 
-class Koan3UsefullShortcutForRefactoring {
+class Koans3UsefullShortcutForRefactoring {
     @Test
     fun `01 - extract firstname to a variable`() {
-        // by using ⌘⌥V | Ctrl+Alt+V
+        // extract variable by using ⌘⌥V | Ctrl+Alt+V
         assertThat("Hello firstname!").isEqualTo("Hello David!")
     }
 
     @Test
     fun `02 - extract parameter firstname`() {
-        // by using ⌘⌥P | Ctrl+Alt+P
+        // Extract parameter inside the sayHello function by using ⌘⌥P | Ctrl+Alt+P
         fun sayHello(): String {
             return "Hello firstname!"
         }
@@ -21,7 +21,9 @@ class Koan3UsefullShortcutForRefactoring {
 
     @Test
     fun `03 - extract field firstname and affect it in constructor`() {
-        // by using ⌘⌥F | Ctrl+Alt+F
+        // extract field by selecting firstname and by using ⌘⌥F | Ctrl+Alt+F
+        // Choose constructor initialization
+        // then extract parameter to make test pass
         class Hello {
             fun say(): String {
                 return "Hello firstname!"
@@ -33,16 +35,15 @@ class Koan3UsefullShortcutForRefactoring {
 
     @Test
     fun `04 - extract method hello`() {
-        // by using ⌘⌥M | Ctrl+Alt+M
         class Hello(private val lang: String) {
             fun say(firstName: String): String {
-                // Select from the following line
+                // Extract method from the following line by using ⌘⌥M | Ctrl+Alt+M
                 var hello = ""
                 when (this.lang.toLowerCase()) {
                     "fr" -> hello = "Bonjour"
                     "en" -> hello = "Hello"
                 }
-                // to this line to extract method
+                // to this line
                 return "${hello} ${firstName}!"
             }
         }
