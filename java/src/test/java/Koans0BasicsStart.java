@@ -1,8 +1,14 @@
 import org.junit.jupiter.api.Test;
-
 import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
 
+// Get started : navigate to to next failing test
 class Koans0BasicsStart {
+    @Test
+    void Koan00_One_shortcut_to_rule_them_all(){
+        // use ⌘⇧A | Ctrl+Shift+A and search a command to toggle case
+        assertThat("SHOULD BE LOWER CASE").isEqualTo("should be lower case");
+    }
+
     @Test
     void Koan01_first_of_all_run_all_test_of_this_file_with_cursor_on_top_of_the_file(){
         // by using ^⇧R | Ctrl+Shift+F10
