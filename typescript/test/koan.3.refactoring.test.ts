@@ -1,4 +1,4 @@
-describe('usefull shortcuts for refactoring.', () => {
+describe('useful shortcuts for refactoring.', () => {
     test('Bonus : replace simple quote with template string first by using ⌥⏎ / Alt+Enter', () => {
         expect('C est le déluge!').toEqual(`C'est le déluge!`);
     });
