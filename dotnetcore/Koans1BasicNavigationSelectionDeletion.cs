@@ -17,13 +17,15 @@ namespace dotnetcore
         [Fact]
         public void Koan02_Delete_next_word()
         {
-            "by using Ctrl+Suppr".Should().Be("done");
+            // Delete all unused spaces by using delete to Word by using Ctrl+Suppr
+            "                             to much spaces kill spaces".Should().Be("to much spaces kill spaces");
         }
 
         [Fact]
         public void Koan03_Delete_to_word_start()
         {
-            "by using Ctrl+Del".Should().Be("");
+            // Delete MouseForEver by using delete to Word Start 
+            "delete the last straw!MouseForEver".Should().Be("delete the last straw!");
         }
 
         [Fact]
@@ -37,7 +39,8 @@ namespace dotnetcore
         [Fact]
         public void Koan05_Extend_selection()
         {
-            "***** SELECT ME WITH EXTEND SELECTION WITH Ctrl+W*****".Should().Be("selected");
+            // by using Ctrl+W / Ctrl+Alt+Right
+            "***** SELECT ME WITH EXTEND SELECTION *****".Should().Be("selected");
         }
 
         [Fact]
@@ -66,7 +69,7 @@ namespace dotnetcore
         [Fact]
         public void Koan08_Navigate_to_sayYes_definition()
         {
-            // by using Ctrl+B
+            // by using Ctrl+B and change behaviour to make this test pass
             new ModuleA().SayYes().Should().Be("yes");
         }
 
