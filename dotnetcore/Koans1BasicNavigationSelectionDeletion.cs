@@ -1,10 +1,11 @@
-﻿using dotnetcore.src;
+﻿
+using dotnetcore.src;
 using FluentAssertions;
 using Xunit;
 
 namespace dotnetcore
 {
-    public class Koan01_basic_navigation_selection_deletion
+    public class Koans1BasicNavigationSelectionDeletion
     {
         [Fact]
         void Koan01_this_test_pass_navigate_to_end_block_and_delete_last_failing_test() {

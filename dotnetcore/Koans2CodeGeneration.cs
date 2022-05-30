@@ -3,7 +3,7 @@ using Xunit;
 
 namespace dotnetcore
 {
-    public class Koan02_code_generation
+    public class Koans2CodeGeneration
     {
         [Fact]
         void Koan01_uncomment_and_generate_class_and_method() {
