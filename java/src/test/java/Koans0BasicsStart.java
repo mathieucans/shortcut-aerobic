@@ -22,7 +22,7 @@ class Koans0BasicsStart {
     }
 
     @Test
-    void Koan03_make_this_test_pass_and_rerun_only_this_test(){
+    void Koan03_make_this_test_pass_and_run_only_this_test(){
         //  by using ^⇧R | Crtl+Shift+F10 with cursor inside this test scope
         assertThat(true).isFalse();
     }

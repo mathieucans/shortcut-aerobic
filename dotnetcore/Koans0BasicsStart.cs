@@ -44,23 +44,16 @@ namespace dotnetcore
         }
         
         [Fact]
-        public void Koan05_Run_this_test_only()
+        public void Koan05_make_this_test_pass_and_run_only_this_test()
         {
             // by using Ctrl+U,R with cursor inside this test
             "Then change this to make this test pass".Should().Be("done");
         }
-
-        [Fact]
-        public void Koan06_looking_for_an_unknown_shortcut()
-        {
-            // you can always look for command with Ctrl+Shift+A and type your command (for exemple "Comment")
-            true.Should().BeFalse();
-        }
         
         [Fact]
-        void Koan07_you_can_open_next_koan_by_Navigate_to_file() {
+        void Koan06_you_can_open_next_koan_by_Navigate_to_file() {
             // by using Ctrl+N and search koan01
-            true.Should().BeFalse();
+            "Then change this to make this test pass".Should().Be("done");
         }
     }
 }
