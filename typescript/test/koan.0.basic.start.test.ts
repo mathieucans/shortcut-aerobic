@@ -1,3 +1,4 @@
+/// Start by these koans to be friendly with running test with shortcuts
 describe('Get started :  navigate to to next failing test', () => {
     test('00 - One shortcut to rule them all', () => {
         // use ⌘⇧A | Ctrl+Shift+A and search a command to toggle case

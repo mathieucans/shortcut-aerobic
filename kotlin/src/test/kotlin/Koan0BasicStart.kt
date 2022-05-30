@@ -1,7 +1,7 @@
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 
-// Get started : navigate to to next failing test
+/// Start by these koans to be friendly with running test with shortcuts
 class Koans0BasicStart {
     @Test
     fun `00 - One shortcut to rule them all`(){

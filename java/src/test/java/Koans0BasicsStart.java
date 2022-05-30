@@ -1,7 +1,7 @@
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
 
-// Get started : navigate to to next failing test
+/// Start by these koans to be friendly with running test with shortcuts
 class Koans0BasicsStart {
     @Test
     void Koan00_One_shortcut_to_rule_them_all(){
