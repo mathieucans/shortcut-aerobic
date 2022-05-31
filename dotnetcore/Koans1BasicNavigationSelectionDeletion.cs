@@ -86,7 +86,24 @@ namespace dotnetcore
         }
 
         [Fact]
-        void Koan11_delete_this_test_and_navigate_to_top_of_file() {
+        public void Koan10_edit_multiple_lines_with_clone_caret() {
+            // Use Ctrl+Alt+↓ to clone caret
+            // Edit song to match expected lyrics
+            var song
+                    = " > Somewhere over the rainbow\n"
+                    + " > Way up high\n"
+                    + " > And the dreams that you dream of\n"
+                    + " > Once in a lullaby, oh\n"
+                    ;
+            song.Should().Be(" > Somewhere over the rainbow\n"
+                    + " > Way up high\n"
+                    + " > And the dreams that you dream of\n"
+                    + " > Once in a lullaby, oh\n"
+            );
+        }
+
+        [Fact]
+        void KoanLAST_delete_this_test_and_navigate_to_top_of_file() {
             // TIPS on laptop keyboard you can using Ctrl+A,←
             // You can delete the folowing line by using Ctrl+L that cut the entire line
             Assert.False(true,"Delete this test and navigate to top");
