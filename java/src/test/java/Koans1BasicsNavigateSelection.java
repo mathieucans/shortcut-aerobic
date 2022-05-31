@@ -79,7 +79,8 @@ class Koans1BasicsNavigateSelection {
                 = "Somewhere over the rainbow"
                 + "Way up high"
                 + "And the dreams that you dream of"
-                + "Once in a lullaby, oh";
+                + "Once in a lullaby, oh"
+                ;
         assertThat(song).isEqualTo(" > Somewhere over the rainbow\n"
                 + " > Way up high\n"
                 + " > And the dreams that you dream of\n"
