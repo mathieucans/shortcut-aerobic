@@ -61,13 +61,30 @@ class Koan1BasicsNavigateSelectionAndDeletion {
     @Test
     fun `08 - Navigate to sayYes definition`() {
         // by using ⌘B | Ctrl+B and change behaviour to make this test pass
-        assertThat(ModuleA ().sayYes()).isEqualTo("yes")
+        assertThat(ModuleA().sayYes()).isEqualTo("yes")
     }
 
     @Test
     fun `09 - Navigate to file structure to change ratio`() {
         // Use ⌘F12 / Ctrl+F12 to navigate to ratio declaration
-        assertThat(3* ratio).isEqualTo(6)
+        assertThat(3 * ratio).isEqualTo(6)
+    }
+
+    @Test
+    fun `10 - edit multiple lines with clone caret`() {
+        // Use ⌥,⌥↓ / Ctrl,Ctrl+↓  to clone caret
+        // Edit song to match expected lyrics
+        val so = ("Somewhere over the rainbow"
+                + "Way up high"
+                + "And the dreams that you dream of"
+                + "Once in a lullaby, oh")
+        assertThat(so).isEqualTo(
+            """ > Somewhere over the rainbow
+ > Way up high
+ > And the dreams that you dream of
+ > Once in a lullaby, oh
+"""
+        )
     }
 
     @Test
@@ -75,7 +92,6 @@ class Koan1BasicsNavigateSelectionAndDeletion {
         // by using ⌘A,← | Ctrl+A,←
         Assertions.fail<String>("Delete this test and navigate to top")
     }
-
 
 
 }
