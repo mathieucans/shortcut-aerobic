@@ -54,7 +54,23 @@ describe('navigate, selection and deletion', () => {
 
     test('09 - Navigate to file structure to change ratio', () => {
         // Use ⌘F12 / Ctrl+F12 to navigate to ratio declaration
-        expect(3*ratio).toEqual(6);
+        expect(3 * ratio).toEqual(6);
+    });
+
+    test('10 - edit multiple lines with clone caret', () => {
+        // Use ⌥,⌥↓ / Ctrl,Ctrl+↓  to clone caret
+        // Edit song to match expected lyrics
+        const song
+            = 'Somewhere over the rainbow'
+            + 'Way up high'
+            + 'And the dreams that you dream of'
+            + 'Once in a lullaby, oh'
+        expect(song).toEqual(
+              ' > Somewhere over the rainbow\n'
+            + ' > Way up high\n'
+            + ' > And the dreams that you dream of\n'
+            + ' > Once in a lullaby, oh\n'
+        )
     });
 
     test('LAST - Delete this test and navigate top of file', () => {
