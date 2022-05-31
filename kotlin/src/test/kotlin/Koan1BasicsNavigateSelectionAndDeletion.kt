@@ -77,7 +77,8 @@ class Koan1BasicsNavigateSelectionAndDeletion {
         val so = ("Somewhere over the rainbow"
                 + "Way up high"
                 + "And the dreams that you dream of"
-                + "Once in a lullaby, oh")
+                + "Once in a lullaby, oh"
+                )
         assertThat(so).isEqualTo(
             """ > Somewhere over the rainbow
  > Way up high
