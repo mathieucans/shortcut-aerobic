@@ -1,5 +1,6 @@
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 class Koans1BasicsNavigateSelection {
@@ -57,6 +58,7 @@ class Koans1BasicsNavigateSelection {
         assertThat(message).isEqualTo("ha ha ha ha ha ha ");
     }
 
+
     @Test
     void Koan08_navigate_to_sayYes_definition() {
         // by using ⌘B | Ctrl+B and change behaviour to make this test pass
@@ -64,13 +66,29 @@ class Koans1BasicsNavigateSelection {
     }
 
     @Test
-    void Koan09_Navigate_to_file_structure_to_change_ratio(){
+    void Koan09_Navigate_to_file_structure_to_change_ratio() {
         // Use ⌘F12 / Ctrl+F12 to navigate to ratio declaration
-        assertThat(3* ratio).isEqualTo(6);
+        assertThat(3 * ratio).isEqualTo(6);
     }
 
     @Test
-    void Koan10_delete_this_test_and_navigate_to_top_of_file() {
+    void Koan10_edit_multiple_lines_with_clone_caret() {
+        // Use ⌥,⌥↓ / Ctrl,Ctrl+↓  to clone caret
+        // Edit song to match expected lyrics
+        String song
+                = "Somewhere over the rainbow"
+                + "Way up high"
+                + "And the dreams that you dream of"
+                + "Once in a lullaby, oh";
+        assertThat(song).isEqualTo(" > Somewhere over the rainbow\n"
+                + " > Way up high\n"
+                + " > And the dreams that you dream of\n"
+                + " > Once in a lullaby, oh\n"
+        );
+    }
+
+    @Test
+    void KoanLAST_delete_this_test_and_navigate_to_top_of_file() {
         // TIPS on laptop keyboard you can using ⌘A,←
         Assertions.fail("Delete this test and navigate to top");
     }
