@@ -86,14 +86,14 @@ namespace dotnetcore
         }
 
         [Fact]
-        public void Koan10_edit_multiple_lines_with_clone_caret() {
+        public void Koan11_edit_multiple_lines_with_clone_caret() {
             // Use Ctrl+Alt+↓ to clone caret
             // Edit song to match expected lyrics
             var song
-                    = " > Somewhere over the rainbow\n"
-                    + " > Way up high\n"
-                    + " > And the dreams that you dream of\n"
-                    + " > Once in a lullaby, oh\n"
+                    = "Somewhere over the rainbow"
+                    + "Way up high"
+                    + "And the dreams that you dream of"
+                    + "Once in a lullaby, oh"
                     ;
             song.Should().Be(" > Somewhere over the rainbow\n"
                     + " > Way up high\n"
