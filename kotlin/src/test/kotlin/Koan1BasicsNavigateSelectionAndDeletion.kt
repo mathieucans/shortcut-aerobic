@@ -8,7 +8,7 @@ class Koan1BasicsNavigateSelectionAndDeletion {
 
     @Test
     fun `01 - This test pass, navigate to end block and delete last failing test`() {
-        // TIPS : on small keybopard, you can navigate to end of file by using ⌘A,→  / Ctrl+A, →
+        // TIPS : on small keyboard, you can navigate to end of file by using ⌘A,→  / Ctrl+A, →
         assertThat(ModuleA().test()).isEqualTo("youpii")
     }
 
