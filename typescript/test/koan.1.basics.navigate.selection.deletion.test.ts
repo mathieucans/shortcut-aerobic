@@ -73,8 +73,9 @@ describe('navigate, selection and deletion', () => {
         )
     });
 
-    test('LAST - Delete this test and navigate top of file', () => {
-        // by using ⌘A,← | Ctrl+A,←
-        fail('Delete this test and navigate to top');
+    test('LAST - Delete this test and navigate back to first test', () => {
+        // Use ⌥⌘← / Ctrl+Alt+← to navigate back
+        // Use ⌥⌘→ / Ctrl+Alt+→ to navigate forward
+        fail('Delete this test and navigate back to first test');
     });
 });

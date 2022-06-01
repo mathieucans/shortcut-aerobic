@@ -89,8 +89,9 @@ class Koans1BasicsNavigateSelection {
     }
 
     @Test
-    void KoanLAST_delete_this_test_and_navigate_to_top_of_file() {
-        // TIPS on laptop keyboard you can using ⌘A,←
-        Assertions.fail("Delete this test and navigate to top");
+    void KoanLAST_delete_this_test_and_navigate_back_to_first_test() {
+        // Use ⌥⌘← / Ctrl+Alt+← to navigate back
+        // Use ⌥⌘→ / Ctrl+Alt+→ to navigate forward
+        Assertions.fail("Delete this test and navigate back to first test");
     }
 }

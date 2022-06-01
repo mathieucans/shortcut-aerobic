@@ -103,10 +103,10 @@ namespace dotnetcore
         }
 
         [Fact]
-        void KoanLAST_delete_this_test_and_navigate_to_top_of_file() {
-            // TIPS on laptop keyboard you can using Ctrl+A,←
-            // You can delete the folowing line by using Ctrl+L that cut the entire line
-            Assert.False(true,"Delete this test and navigate to top");
+        void KoanLAST_delete_this_test_and_navigate_back_to_first_test() {
+            // Use CTRL + - to navigate back
+            // Use CTRL + SHIFT + - to navigate forward
+            Assert.False(true,"Delete this test and navigate back to first test");
         }
 
     }

@@ -89,9 +89,10 @@ class Koan1BasicsNavigateSelectionAndDeletion {
     }
 
     @Test
-    fun `LAST - Delete this test and navigate top of file`() {
-        // by using ⌘A,← | Ctrl+A,←
-        Assertions.fail<String>("Delete this test and navigate to top")
+    fun `LAST - Delete this test and navigate back to first test`() {
+        // Use ⌥⌘← / Ctrl+Alt+← to navigate back
+        // Use ⌥⌘→ / Ctrl+Alt+→ to navigate forward
+        Assertions.fail<String>("Delete this test and navigate back to first test")
     }
 
 
