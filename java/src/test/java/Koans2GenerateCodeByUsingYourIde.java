@@ -23,13 +23,14 @@ class Koans2GenerateCodeByUsingYourIde {
 
     @Test
     void Koan03_extract_interface_Language_of_French() {
+        // Extract interface Language of French and generate English langage.
+        // Then change SayHello parameter and field type to speak english.
         // Tips : To extract interface, display the refactoring menu by using ^T | Ctrl+Shift+Alt+T
         // Check the methods you want to have in your interface and make English implement it by using ⌥⏎ | Alt+Enter
 
-        // Uncomment this line
-        // English language = new English();
-        // Comment this line
-        French language = new French();
+        // English language = new English();              // Uncomment this line
+        French language = new French();                   // Comment this line
+
         SayHello sayHello = new SayHello(language);
 
         String response = sayHello.hello();
@@ -39,7 +40,7 @@ class Koans2GenerateCodeByUsingYourIde {
 
 }
 
-
+// Extract Language interface
 class French {
     public String hello() {
         return "Salut";

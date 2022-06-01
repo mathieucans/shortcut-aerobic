@@ -21,13 +21,14 @@ class Koan2GenerateCodeByUsingYourIde {
 
     @Test
     fun `03 - extract interface Language from French`(){
+        // Extract interface Language of French and generate English langage.
+        // Then change SayHello parameter and field type to speak english.
         // Tips : To extract interface, display the refactoring menu by using ^T | Ctrl+Shift+Alt+T
         // Check the methods you want to have in your interface and make English implement it by using ⌥⏎ | Alt+Enter
 
-        // Uncomment this line
-        // val language = English()
-        // Comment this line
-        val language = French()
+        // val language = English()             // Uncomment this line
+        val language = French()                 // Comment this line
+
         val sayHello = SayHello(language)
 
         val response = sayHello.hello()
@@ -36,7 +37,7 @@ class Koan2GenerateCodeByUsingYourIde {
     }
 }
 
-
+// extract Language interface
 class French {
     fun hello(): String {
         return "Salut"

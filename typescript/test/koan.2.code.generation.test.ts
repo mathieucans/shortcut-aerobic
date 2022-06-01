@@ -15,13 +15,14 @@ describe('Generate code by using your IDE', () => {
     });
 
     test('03 - extract interface Language from French', () => {
+        // Extract interface Language of French and generate English langage.
+        // Then change SayHello parameter and field type to speak english.
         // Tips : To extract interface, display the refactoring menu by using ^T | Ctrl+Shift+Alt+T
         // Check the methods you want to have in your interface and make English implement it by using ⌥⏎ | Alt+Enter
 
-        // Uncomment this line
-        // const language = new English();
-        // Comment this line
-        const language = new French();
+        // const language = new English();      // Uncomment this line
+        const language = new French();          // Comment this line
+
         let sayHello = new SayHello(language);
 
         let response = sayHello.hello();
@@ -30,7 +31,7 @@ describe('Generate code by using your IDE', () => {
     });
 });
 
-
+// Extract language interface
 class French {
     hello() {
         return 'Salut';

@@ -20,11 +20,14 @@ namespace dotnetcore
         [Fact]
         public void Koan02_extract_interface_by_using_refactoring_short_cut()
         {
-            // Extract interface Language of French by using Ctrl+Shift+R
-            // Uncomment this line
-            // var language = new English();
-            // Comment this line
-            var language  = new French();
+            // Extract interface Language of French and generate English langage. 
+            // Then change SayHello parameter and field type to speak english.
+            // Tips : To extract interface, display the refactoring menu by using Ctrl+Shift+R
+            // Check the methods you want to have in your interface and make English implement it by using Alt+Enter
+
+            // var language = new English();            // Uncomment this line
+            var language  = new French();               // Comment this line
+
             var sayHello = new SayHello(language);
 
             var response = sayHello.Hello();
@@ -74,6 +77,7 @@ namespace dotnetcore
         }
     }
 
+    // Extract interface Language 
     public class French
     {
         public string GetHello()
