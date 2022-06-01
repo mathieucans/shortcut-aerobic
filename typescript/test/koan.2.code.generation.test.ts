@@ -1,6 +1,6 @@
 describe('Generate code by using your IDE', () => {
     test('01 - uncomment and generate class and method', () => {
-        // by unsing ⌥⏎ | Alt+Enter
+        // by using ⌥⏎ | Alt+Enter
         // TIPS : you can navigate through error code by using F2
         let buildResult = "code";
 
@@ -39,7 +39,7 @@ class French {
 }
 
 class SayHello {
-    constructor(private language: French) {
+    constructor(private readonly language: French) {
 
     }
 
