@@ -4,9 +4,9 @@ import org.junit.jupiter.api.Test
 class Koan2GenerateCodeByUsingYourIde {
     @Test
     fun `01 - uncomment and generate class and method`(){
-        // by unsing ⌥⏎ | Alt+Enter
+        // by using ⌥⏎ | Alt+Enter
         // TIPS : you can navigate through error code by using F2
-        var buildResult = "code"
+        val buildResult = "code"
 
         //buildResult = RobotCode().repeat(buildResult)
 

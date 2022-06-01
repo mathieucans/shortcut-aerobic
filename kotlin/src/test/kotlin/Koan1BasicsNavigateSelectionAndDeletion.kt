@@ -42,7 +42,7 @@ class Koan1BasicsNavigateSelectionAndDeletion {
         // by using ⌥↑ | Ctrl+W
         // extend selection depends on scope, by using ⌥↑ | Ctrl+W select only what needed in line below
         assertThat(ModuleA().test()).isEqualTo("youpii")
-        // and paste it in the folowing assertion
+        // and paste it in the following assertion
         assertThat("***** REPLACE ME *****").isEqualTo("ModuleA().test()")
     }
 

@@ -47,13 +47,13 @@ class Koan3UsefulShortcutForRefactoring {
                     "en" -> hello = "Hello"
                 }
                 // to this line
-                return "${hello} ${firstName}!"
+                return "$hello ${firstName}!"
             }
         }
 
         assertThat(Hello("fr").say("David")).isEqualTo("Bonjour David!")
         assertThat(Hello("en").say("David")).isEqualTo("Hello David!")
-        assertThat(Hello("hsqlf").say("David")).isEqualTo(" David!")
+        assertThat(Hello("unknown language").say("David")).isEqualTo(" David!")
     }
 
 
