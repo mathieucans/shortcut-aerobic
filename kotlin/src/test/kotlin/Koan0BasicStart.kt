@@ -2,7 +2,7 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 
 /// Start by these koans to be friendly with running test with shortcuts
-class Koans0BasicStart {
+class Koan0BasicStart {
     @Test
     fun `00 - One shortcut to rule them all`(){
         // use ⌘⇧A | Ctrl+Shift+A and search a command to toggle case

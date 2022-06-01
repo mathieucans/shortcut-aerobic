@@ -2,7 +2,7 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 
-class Koans3UsefulShortcutForRefactoring {
+class Koan3UsefulShortcutForRefactoring {
     @Test
     fun `01 - extract firstname to a variable`() {
         // Extract firstname variable by using ⌘⌥V | Ctrl+Alt+V
