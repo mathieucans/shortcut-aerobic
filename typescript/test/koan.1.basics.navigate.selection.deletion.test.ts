@@ -4,7 +4,7 @@ const ratio = 0.5;
 
 describe('navigate, selection and deletion', () => {
     test('01 - This test pass, navigate to end block and delete last failing test', () => {
-        // TIPS : on small keybopard, you can navigate to end of file by using ⌘A,→  / Ctrl+A, →
+        // TIPS : on small keyboard, you can navigate to end of file by using ⌘A,→  / Ctrl+A, →
         expect(new ModuleA().test()).toEqual('youpii');
     });
 
@@ -76,6 +76,6 @@ describe('navigate, selection and deletion', () => {
     test('LAST - Delete this test and navigate back to first test', () => {
         // Use ⌥⌘← / Ctrl+Alt+← to navigate back
         // Use ⌥⌘→ / Ctrl+Alt+→ to navigate forward
-        fail('Delete this test and navigate back to first test');
+        fail('Delete this test and navigate back to first testx');
     });
 });
