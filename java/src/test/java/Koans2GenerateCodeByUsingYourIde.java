@@ -5,7 +5,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 class Koans2GenerateCodeByUsingYourIde {
     @Test
     void Koan01_uncomment_and_generate_class_and_method() {
-        // by unsing ⌥⏎ | Alt+Enter
+        // by using ⌥⏎ | Alt+Enter
         // TIPS : you can navigate through error code by using F2
         String buildResult = "code";
 
@@ -48,7 +48,7 @@ class French {
 }
 
 class SayHello {
-    private French language;
+    private final French language;
 
     SayHello(French language) {
 
