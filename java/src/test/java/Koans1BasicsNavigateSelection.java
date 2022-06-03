@@ -1,4 +1,3 @@
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -74,7 +73,6 @@ class Koans1BasicsNavigateSelection {
         message += "Un tiens vaut mieux que deux tu l'auras.";
         assertThat(message).isEqualTo("ha ha ha ha ha ha ");
     }
-
 
     @Test
     void Koan09_navigate_to_sayYes_definition() {

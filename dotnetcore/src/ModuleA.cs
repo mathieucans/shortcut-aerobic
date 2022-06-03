@@ -17,5 +17,10 @@ namespace dotnetcore.src
         public String openTheDoor(String key) {
             return "trash your mouse" == key ? "unlock" : "locked";
         }
+
+        public Boolean theFirstVerseOfTheSongIs(String firstVerse) {
+           return firstVerse.ToLower().Contains("somewhere over the rainbow");
+        }
+
     }
 }

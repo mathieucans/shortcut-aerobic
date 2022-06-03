@@ -52,41 +52,7 @@ namespace dotnetcore
         }
 
         [Fact]
-        public void Koan07_Select_next_occurence()
-        {
-            // Next occurence selection is not available neither in Visual Studio nor Resharper
-            // To enable this amazing feature install NextOccurence extension to VisualStudio https://marketplace.visualstudio.com/items?itemName=thomaswelen.SelectNextOccurrence
-            // Then map next Occurence to your favorite short cut (Intellij programers use Alt+J on windows)
-            var message = "Un tiens vaut mieux que deux tu l'auras.";
-            message += "Un tiens vaut mieux que deux tu l'auras.";
-            message += "Un tiens vaut mieux que deux tu l'auras.";
-            message += "Un tiens vaut mieux que deux tu l'auras.";
-            message += "Un tiens vaut mieux que deux tu l'auras.";
-            message += "Un tiens vaut mieux que deux tu l'auras.";
-            message.Should().Be("ha ha ha ha ha ha ");
-        }
-
-        [Fact]
-        public void Koan08_Navigate_to_sayYes_definition()
-        {
-            // by using Ctrl+B and change behaviour to make this test pass
-            new ModuleA().SayYes().Should().Be("yes");
-        }
-
-        [Fact]
-        public void Koan09_Navigate_to_ModuleA_class()
-        {
-            "by using Ctrl+Alt+Shift+N".Should().Be("done");
-        }
-        
-        [Fact]
-        public void Koan10_Navigate_to_ModuleA_file()
-        {
-            "by using Ctrl+Shift+N".Should().Be("done");
-        }
-
-        [Fact]
-        public void Koan11_edit_multiple_lines_with_clone_caret() {
+        public void Koan07_edit_multiple_lines_with_clone_caret() {
             // Use Ctrl+Alt+↓ to clone caret
             // Edit song to match expected lyrics
             var song
@@ -103,12 +69,47 @@ namespace dotnetcore
         }
 
         [Fact]
-        void KoanLAST_delete_this_test_and_navigate_back_to_first_test() {
-            // Use CTRL + - to navigate back
-            // Use CTRL + SHIFT + - to navigate forward
-            Assert.False(true,"Delete this test and navigate back to first test");
+        public void Koan08_Select_next_occurence()
+        {
+            // Next occurence selection is not available neither in Visual Studio nor Resharper
+            // To enable this amazing feature install NextOccurence extension to VisualStudio https://marketplace.visualstudio.com/items?itemName=thomaswelen.SelectNextOccurrence
+            // Then map next Occurence to your favorite short cut (Intellij programers use Alt+J on windows)
+            var message = "Un tiens vaut mieux que deux tu l'auras.";
+            message += "Un tiens vaut mieux que deux tu l'auras.";
+            message += "Un tiens vaut mieux que deux tu l'auras.";
+            message += "Un tiens vaut mieux que deux tu l'auras.";
+            message += "Un tiens vaut mieux que deux tu l'auras.";
+            message += "Un tiens vaut mieux que deux tu l'auras.";
+            message.Should().Be("ha ha ha ha ha ha ");
         }
 
+        [Fact]
+        public void Koan09_Navigate_to_sayYes_definition()
+        {
+            // by using Ctrl+B and change behaviour to make this test pass
+            new ModuleA().SayYes().Should().Be("yes");
+        }
+
+        [Fact]
+        public void Koan10_Navigate_to_ModuleA_class()
+        {
+            "by using Ctrl+Alt+Shift+N".Should().Be("done");
+        }
+        
+        [Fact]
+        public void Koan11_Navigate_to_ModuleA_file()
+        {
+            "by using Ctrl+Shift+N".Should().Be("done");
+        }
+
+        [Fact]
+        void Koan12_Navigate_back_and_forward() {
+            // Use navigate back to find and copy the first verse of the song
+            // Use ⌥⌘← / Ctrl+Alt+← to navigate back
+            // Use ⌥⌘→ / Ctrl+Alt+→ to navigate forward
+            new ModuleA().theFirstVerseOfTheSongIs("copy here the first verse of the song")
+                    .Should().Be(true);
+        }
     }
 }
 // the key is "trash your mouse"
