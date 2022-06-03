@@ -28,7 +28,7 @@ class Koans0BasicsStart {
     }
 
     @Test
-    void Koan04_make_this_test_pass_and_rerun_all_test() {
+    void Koan04_make_this_test_pass_and_rerun_all_test_of_this_class() {
         //  by using ^⇧R | Crtl+Shift+F10 with cursor between two tests
         assertThat(true).isFalse();
     }
