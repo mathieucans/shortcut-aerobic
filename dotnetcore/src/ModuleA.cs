@@ -13,5 +13,9 @@ namespace dotnetcore.src
         {
             return "youpii";
         }
+        
+        public String openTheDoor(String key) {
+            return "trash your mouse" == key ? "unlock" : "locked";
+        }
     }
 }

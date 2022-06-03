@@ -3,9 +3,9 @@ import ModuleA from "../src/ModuleA";
 const ratio = 0.5;
 
 describe('navigate, selection and deletion', () => {
-    test('01 - This test pass, navigate to end block and delete last failing test', () => {
-        // TIPS : on small keyboard, you can navigate to end of file by using ⌘A,→  / Ctrl+A, →
-        expect(new ModuleA().test()).toEqual('youpii');
+    test('01 - navigate to end block and find the key to open the door', () => {
+        // TIPS : on laptop keyboard, you can navigate to end of file by using ⌘A,→  / Ctrl+A, →
+        expect(new ModuleA().openTheDoor("the key is at the end of this file")).toEqual('unlocked');
     });
 
     test('02 - Deletion to next word', () => {
@@ -76,6 +76,8 @@ describe('navigate, selection and deletion', () => {
     test('LAST - Delete this test and navigate back to first test', () => {
         // Use ⌥⌘← / Ctrl+Alt+← to navigate back
         // Use ⌥⌘→ / Ctrl+Alt+→ to navigate forward
-        fail('Delete this test and navigate back to first testx');
+        fail('Delete this test and navigate back to first test');
     });
 });
+// the key is "trash your mouse"
+// TIPS : on laptop keyboard, you can navigate to top of file by using ⌘A,←  / Ctrl+A, ←

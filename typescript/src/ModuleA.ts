@@ -7,4 +7,8 @@ export default class ModuleA {
     sayYes() {
         return 'no';
     }
+
+    openTheDoor(key: string) {
+        return key === 'trash your mouse' ? 'unlocked' : 'locked';
+    }
 }

@@ -8,9 +8,9 @@ class Koans1BasicsNavigateSelection {
     private final double ratio = 0.5;
 
     @Test
-    void Koan01_this_test_pass_navigate_to_end_block_and_delete_last_failing_test() {
+    void Koan01_navigate_to_end_block_and_find_the_key_to_open_the_door() {
         // TIPS : on laptop keyboard, you can navigate to end of file by using ⌘A,→  / Ctrl+A, →
-        assertThat(new ModuleA().test()).isEqualTo("youpii");
+        assertThat(new ModuleA().openTheDoor("the key is at the end of this file")).isEqualTo("unlock");
     }
 
     @Test
@@ -95,3 +95,6 @@ class Koans1BasicsNavigateSelection {
         Assertions.fail("Delete this test and navigate back to first test");
     }
 }
+// the key is "trash your mouse"
+// TIPS : on laptop keyboard, you can navigate to top of file by using ⌘A,←  / Ctrl+A, ←
+

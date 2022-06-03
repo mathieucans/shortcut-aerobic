@@ -7,9 +7,9 @@ class Koan1BasicsNavigateSelectionAndDeletion {
     private val ratio = 0.5
 
     @Test
-    fun `01 - This test pass, navigate to end block and delete last failing test`() {
-        // TIPS : on small keyboard, you can navigate to end of file by using ⌘A,→  / Ctrl+A, →
-        assertThat(ModuleA().test()).isEqualTo("youpii")
+    fun `01 - navigate to end block and find the key to open the door`() {
+        // TIPS : on laptop keyboard, you can navigate to end of file by using ⌘A,→  / Ctrl+A, →
+        assertThat(ModuleA().openTheDoor("the key is at the end of this file")).isEqualTo("unlock")
     }
 
     @Test
@@ -94,6 +94,6 @@ class Koan1BasicsNavigateSelectionAndDeletion {
         // Use ⌥⌘→ / Ctrl+Alt+→ to navigate forward
         Assertions.fail<String>("Delete this test and navigate back to first test")
     }
-
-
 }
+// the key is "trash your mouse"
+// TIPS : on laptop keyboard, you can navigate to top of file by using ⌘A,←  / Ctrl+A, ←

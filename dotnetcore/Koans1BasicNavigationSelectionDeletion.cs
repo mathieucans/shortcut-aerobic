@@ -8,10 +8,10 @@ namespace dotnetcore
     public class Koans1BasicNavigationSelectionDeletion
     {
         [Fact]
-        void Koan01_this_test_pass_navigate_to_end_block_and_delete_last_failing_test() {
+        void Koan01_navigate_to_end_block_and_find_the_key_to_open_the_door() {
             // Use Ctrl+END
             // TIPS : on laptop keyboard, you can navigate to end of file by using ⌘A,→  / Ctrl+A, →
-            true.Should().BeTrue();
+            new ModuleA().openTheDoor("the key is at the end of this file").Should().Be("unlock");
         }
 
         [Fact]
@@ -111,3 +111,5 @@ namespace dotnetcore
 
     }
 }
+// the key is "trash your mouse"
+// TIPS : on laptop keyboard, you can navigate to top of file by using ⌘A,←  / Ctrl+A, ←

@@ -6,4 +6,11 @@ class ModuleA {
     fun sayYes(): String {
         return "No"
     }
+
+    fun openTheDoor(key: String): String {
+        return when (key) {
+            "trash your mouse" -> "unlock"
+            else -> "locked"
+        }
+    }
 }
