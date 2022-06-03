@@ -13,4 +13,8 @@ class ModuleA {
             else -> "locked"
         }
     }
+
+    fun theFirstVerseOfTheSongIs(firstVerse: String): Boolean {
+        return firstVerse == "Somewhere over the rainbow"
+    }
 }

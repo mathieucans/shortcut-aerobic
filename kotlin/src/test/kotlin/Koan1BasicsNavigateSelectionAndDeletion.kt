@@ -47,31 +47,7 @@ class Koan1BasicsNavigateSelectionAndDeletion {
     }
 
     @Test
-    fun `07 - Select next occurrence then edit multi lines`() {
-        // by using ^G | Alt+J
-        var message = "Un tiens vaut mieux que deux tu l'auras."
-        message += "Un tiens vaut mieux que deux tu l'auras."
-        message += "Un tiens vaut mieux que deux tu l'auras."
-        message += "Un tiens vaut mieux que deux tu l'auras."
-        message += "Un tiens vaut mieux que deux tu l'auras."
-        message += "Un tiens vaut mieux que deux tu l'auras."
-        assertThat(message).isEqualTo("ha ha ha ha ha ha ")
-    }
-
-    @Test
-    fun `08 - Navigate to sayYes definition`() {
-        // by using ⌘B | Ctrl+B and change behaviour to make this test pass
-        assertThat(ModuleA().sayYes()).isEqualTo("yes")
-    }
-
-    @Test
-    fun `09 - Navigate to file structure to change ratio`() {
-        // Use ⌘F12 / Ctrl+F12 to navigate to ratio declaration
-        assertThat(3 * ratio).isEqualTo(6)
-    }
-
-    @Test
-    fun `10 - edit multiple lines with clone caret`() {
+    fun `07 - edit multiple lines with clone caret`() {
         // Use ⌥,⌥↓ / Ctrl,Ctrl+↓  to clone caret
         // Edit song to match expected lyrics
         val so = ("Somewhere over the rainbow"
@@ -89,11 +65,37 @@ class Koan1BasicsNavigateSelectionAndDeletion {
     }
 
     @Test
-    fun `LAST - Delete this test and navigate back to first test`() {
+    fun `08 - Select next occurrence then edit multi lines`() {
+        // by using ^G | Alt+J
+        var message = "Un tiens vaut mieux que deux tu l'auras."
+        message += "Un tiens vaut mieux que deux tu l'auras."
+        message += "Un tiens vaut mieux que deux tu l'auras."
+        message += "Un tiens vaut mieux que deux tu l'auras."
+        message += "Un tiens vaut mieux que deux tu l'auras."
+        message += "Un tiens vaut mieux que deux tu l'auras."
+        assertThat(message).isEqualTo("ha ha ha ha ha ha ")
+    }
+
+    @Test
+    fun `09 - Navigate to sayYes definition`() {
+        // by using ⌘B | Ctrl+B and change behaviour to make this test pass
+        assertThat(ModuleA().sayYes()).isEqualTo("yes")
+    }
+
+    @Test
+    fun `10 - Navigate to file structure to change ratio`() {
+        // Use ⌘F12 / Ctrl+F12 to navigate to ratio declaration
+        assertThat(3 * ratio).isEqualTo(6)
+    }
+
+    @Test
+    fun `11 - Navigate back and forward`() {
+        // Use navigate back to find and copy the first verse of the song
         // Use ⌥⌘← / Ctrl+Alt+← to navigate back
         // Use ⌥⌘→ / Ctrl+Alt+→ to navigate forward
-        Assertions.fail<String>("Delete this test and navigate back to first test")
+        assertThat(ModuleA().theFirstVerseOfTheSongIs("copy here the first verse of the song"))
     }
+
 }
 // the key is "trash your mouse"
 // TIPS : on laptop keyboard, you can navigate to top of file by using ⌘A,←  / Ctrl+A, ←
