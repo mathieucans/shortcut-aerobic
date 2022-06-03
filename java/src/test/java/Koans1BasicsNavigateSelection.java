@@ -47,32 +47,7 @@ class Koans1BasicsNavigateSelection {
     }
 
     @Test
-    void Koan07_select_next_occurrence_then_edit_multi_lines() {
-        // by using ^G | Alt+J
-        String message = "Un tiens vaut mieux que deux tu l'auras.";
-        message += "Un tiens vaut mieux que deux tu l'auras.";
-        message += "Un tiens vaut mieux que deux tu l'auras.";
-        message += "Un tiens vaut mieux que deux tu l'auras.";
-        message += "Un tiens vaut mieux que deux tu l'auras.";
-        message += "Un tiens vaut mieux que deux tu l'auras.";
-        assertThat(message).isEqualTo("ha ha ha ha ha ha ");
-    }
-
-
-    @Test
-    void Koan08_navigate_to_sayYes_definition() {
-        // by using ⌘B | Ctrl+B and change behaviour to make this test pass
-        assertThat(new ModuleA().sayYes()).isEqualTo("yes");
-    }
-
-    @Test
-    void Koan09_Navigate_to_file_structure_to_change_ratio() {
-        // Use ⌘F12 / Ctrl+F12 to navigate to ratio declaration
-        assertThat(3 * ratio).isEqualTo(6);
-    }
-
-    @Test
-    void Koan10_edit_multiple_lines_with_clone_caret() {
+    void Koan07_edit_multiple_lines_with_clone_caret() {
         // Use ⌥,⌥↓ / Ctrl,Ctrl+↓  to clone caret
         // Edit song to match expected lyrics
         String song
@@ -89,10 +64,37 @@ class Koans1BasicsNavigateSelection {
     }
 
     @Test
-    void KoanLAST_delete_this_test_and_navigate_back_to_first_test() {
+    void Koan08_select_next_occurrence_then_edit_multi_lines() {
+        // by using ^G | Alt+J
+        String message = "Un tiens vaut mieux que deux tu l'auras.";
+        message += "Un tiens vaut mieux que deux tu l'auras.";
+        message += "Un tiens vaut mieux que deux tu l'auras.";
+        message += "Un tiens vaut mieux que deux tu l'auras.";
+        message += "Un tiens vaut mieux que deux tu l'auras.";
+        message += "Un tiens vaut mieux que deux tu l'auras.";
+        assertThat(message).isEqualTo("ha ha ha ha ha ha ");
+    }
+
+
+    @Test
+    void Koan09_navigate_to_sayYes_definition() {
+        // by using ⌘B | Ctrl+B and change behaviour to make this test pass
+        assertThat(new ModuleA().sayYes()).isEqualTo("yes");
+    }
+
+    @Test
+    void Koan10_Navigate_to_file_structure_to_change_ratio() {
+        // Use ⌘F12 / Ctrl+F12 to navigate to ratio declaration
+        assertThat(3 * ratio).isEqualTo(6);
+    }
+
+    @Test
+    void Koan11_Navigate_back_and_forward() {
+        // Use navigate back to find and copy the first verse of the song
         // Use ⌥⌘← / Ctrl+Alt+← to navigate back
         // Use ⌥⌘→ / Ctrl+Alt+→ to navigate forward
-        Assertions.fail("Delete this test and navigate back to first test");
+        assertThat(new ModuleA().theFirstVerseOfTheSongIs("copy here the first verse of the song"))
+                .isTrue();
     }
 }
 // the key is "trash your mouse"
