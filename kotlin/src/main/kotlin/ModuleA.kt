@@ -4,7 +4,7 @@ class ModuleA {
     }
 
     fun sayYes(): String {
-        return "No"
+        return "Yes"
     }
 
     fun openTheDoor(key: String): String {
@@ -15,6 +15,6 @@ class ModuleA {
     }
 
     fun theFirstVerseOfTheSongIs(firstVerse: String): Boolean {
-        return firstVerse == "Somewhere over the rainbow"
+        return firstVerse.toLowerCase().contains("somewhere over the rainbow")
     }
 }

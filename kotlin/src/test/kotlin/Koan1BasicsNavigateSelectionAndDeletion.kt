@@ -94,6 +94,7 @@ class Koan1BasicsNavigateSelectionAndDeletion {
         // Use ⌥⌘← / Ctrl+Alt+← to navigate back
         // Use ⌥⌘→ / Ctrl+Alt+→ to navigate forward
         assertThat(ModuleA().theFirstVerseOfTheSongIs("copy here the first verse of the song"))
+            .isTrue()
     }
 
 }
