@@ -11,4 +11,8 @@ export default class ModuleA {
     openTheDoor(key: string) {
         return key === 'trash your mouse' ? 'unlocked' : 'locked';
     }
+
+    theFirstVerseOfTheSongIs(firstVerse: string) : boolean{
+        return firstVerse.toLowerCase().includes("somewhere over the rainbow");
+    }
 }
