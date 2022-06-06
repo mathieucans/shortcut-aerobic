@@ -3,7 +3,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class Koans4bonusTest {
     @Test
-    public void cut_up_to_line_end() {
+    public void Koan01_cut_up_to_line_end() {
         String lines = "keep " + "--- delete me with ^K"
         + "the " + "--- this short couts"
         + "firsts " + "--- works in terminal too"
@@ -13,8 +13,14 @@ public class Koans4bonusTest {
     }
 
     @Test
-    public void past_from_history() {
+    public void Koan02_past_from_history() {
         // by using ⌘⇧V / Ctrl+Shift+V
         assertThat("past here an old text you have copy").isEqualTo(" + \"--- delete me with ^K\"");
+    }
+
+    @Test
+    public void Koan03_got_to_same_named_test() {
+        // by using ⌘⇧T / Ctrl+Shift+T
+        assertThat(new Koans4bonus().goToTest()).isEqualTo("go to test");
     }
 }
