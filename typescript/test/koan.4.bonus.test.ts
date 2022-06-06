@@ -23,4 +23,9 @@ words
         // by using ⌘⇧T / Ctrl+Shift+T
         expect(new Koan4Bonus().goToTest()).toEqual('go to test')
     });
+
+    test('run anything0', () => {
+        // by using Double ^ / Ctrl, Ctrl
+        expect('then type npm run test').toEqual('all green')
+    });
 });
