@@ -23,4 +23,10 @@ public class Koans4bonusTest {
         // by using ⌘⇧T / Ctrl+Shift+T
         assertThat(new Koans4bonus().goToTest()).isEqualTo("go to test");
     }
+
+    @Test
+    public void Koan04_run_anything() {
+        // by using Double ^ / Ctrl, Ctrl
+        assertThat("then type gradle test").isEqualTo("all green");
+    }
 }
