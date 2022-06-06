@@ -53,7 +53,7 @@ namespace dotnetcore
 
         [Fact]
         public void Koan07_edit_multiple_lines_with_clone_caret() {
-            // Use Ctrl+Alt+↓ to clone caret
+            // Use Ctrl+Alt+↓ to clone caret (press Esc to exit multi caret edition)
             // Edit song to match expected lyrics
             var song
                     = "Somewhere over the rainbow"
@@ -74,6 +74,7 @@ namespace dotnetcore
             // Next occurence selection is not available neither in Visual Studio nor Resharper
             // To enable this amazing feature install NextOccurence extension to VisualStudio https://marketplace.visualstudio.com/items?itemName=thomaswelen.SelectNextOccurrence
             // Then map next Occurence to your favorite short cut (Intellij programers use Alt+J on windows)
+            // (press Esc to exit multi caret edition)
             var message = "Un tiens vaut mieux que deux tu l'auras.";
             message += "Un tiens vaut mieux que deux tu l'auras.";
             message += "Un tiens vaut mieux que deux tu l'auras.";

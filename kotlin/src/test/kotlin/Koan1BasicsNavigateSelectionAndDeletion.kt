@@ -48,7 +48,7 @@ class Koan1BasicsNavigateSelectionAndDeletion {
 
     @Test
     fun `07 - edit multiple lines with clone caret`() {
-        // Use ⌥,⌥↓ / Ctrl,Ctrl+↓  to clone caret
+        // Use ⌥,⌥↓ / Ctrl,Ctrl+↓  to clone caret (press Esc to exit multi caret edition)
         // Edit song to match expected lyrics
         val so = ("Somewhere over the rainbow"
                 + "Way up high"
@@ -66,7 +66,7 @@ class Koan1BasicsNavigateSelectionAndDeletion {
 
     @Test
     fun `08 - Select next occurrence then edit multi lines`() {
-        // by using ^G | Alt+J
+        // by using ^G | Alt+J (press Esc to exit multi caret edition)
         var message = "Un tiens vaut mieux que deux tu l'auras."
         message += "Un tiens vaut mieux que deux tu l'auras."
         message += "Un tiens vaut mieux que deux tu l'auras."

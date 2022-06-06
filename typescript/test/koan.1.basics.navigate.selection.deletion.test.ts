@@ -37,7 +37,7 @@ describe('navigate, selection and deletion', () => {
     });
 
     test('07 - edit multiple lines with clone caret', () => {
-        // Use ⌥,⌥↓ / Ctrl,Ctrl+↓  to clone caret
+        // Use ⌥,⌥↓ / Ctrl,Ctrl+↓  to clone caret (press Esc to exit multi caret edition)
         // Edit song to match expected lyrics
         const song
             = 'Somewhere over the rainbow'
@@ -53,7 +53,7 @@ describe('navigate, selection and deletion', () => {
     });
 
     test('08 - Select next occurrence then edit multi lines', () => {
-        // by using ^G | Alt+J
+        // by using ^G | Alt+J (press Esc to exit multi caret edition)
         let message = `Un tiens vaut mieux que deux tu l'auras.`;
         message += `Un tiens vaut mieux que deux tu l'auras.`;
         message += `Un tiens vaut mieux que deux tu l'auras.`;

@@ -47,7 +47,7 @@ class Koans1BasicsNavigateSelection {
 
     @Test
     void Koan07_edit_multiple_lines_with_clone_caret() {
-        // Use ⌥,⌥↓ / Ctrl,Ctrl+↓  to clone caret
+        // Use ⌥,⌥↓ / Ctrl,Ctrl+↓  to clone caret (press Esc to exit multi caret edition)
         // Edit song to match expected lyrics
         String song
                 = "Somewhere over the rainbow"
@@ -64,7 +64,7 @@ class Koans1BasicsNavigateSelection {
 
     @Test
     void Koan08_select_next_occurrence_then_edit_multi_lines() {
-        // by using ^G | Alt+J
+        // by using ^G | Alt+J (press Esc to exit multi caret edition)
         String message = "Un tiens vaut mieux que deux tu l'auras.";
         message += "Un tiens vaut mieux que deux tu l'auras.";
         message += "Un tiens vaut mieux que deux tu l'auras.";
