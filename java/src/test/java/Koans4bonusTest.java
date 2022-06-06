@@ -11,4 +11,10 @@ public class Koans4bonusTest {
 
         assertThat(lines).isEqualTo("keep the firsts words");
     }
+
+    @Test
+    public void past_from_history() {
+        // by using ⌘⇧V / Ctrl+Shift+V
+        assertThat("past here an old text you have copy").isEqualTo(" + \"--- delete me with ^K\"");
+    }
 }
