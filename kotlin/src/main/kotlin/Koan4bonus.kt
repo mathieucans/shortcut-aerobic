@@ -5,4 +5,16 @@ class Koan4bonus {
         // return "go to test";
     }
 
+    fun inside(): String {
+        // Inline following method with ⌥⌘N / Ctrl+Alt+N
+        // and change returned string for inside requirement
+        return inLineMe()
+    }
+
+    fun outside(): String {
+        return inLineMe()
+    }
+
+    private fun inLineMe() = "outside"
+
 }
