@@ -8,5 +8,4 @@ Before all install dependencies :
 #### TODO
  - Case toggle
  - Safe delete ⌘⌦
- - Inline
  

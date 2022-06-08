@@ -24,7 +24,13 @@ words
         expect(new Koan4Bonus().goToTest()).toEqual('go to test')
     });
 
-    test('04 - run anything0', () => {
+    test('04 - inline method', () => {
+        // Go to inside method and introduce duplication by inlining method
+        expect(new Koan4Bonus().inside()).toEqual('inside');
+        expect(new Koan4Bonus().outside()).toEqual('outside');
+    });
+
+    test('05 - run anything0', () => {
         // by using Double ^ / Ctrl, Ctrl
         expect('then type npm run test').toEqual('all green')
     });
