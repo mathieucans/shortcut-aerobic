@@ -4,4 +4,17 @@ public class Koans4bonus {
         return "remove me, uncomment the following line and go back to test";
         // return "go to test";
     }
+
+    public String inside() {
+        // Inline following method with ⌥⌘N / Ctrl+Alt+N
+        // and change returned string for inside requirement
+        return inLineMe();
+    }
+    public String outside() {
+        return inLineMe();
+    }
+
+    private String inLineMe() {
+        return "outside";
+    }
 }

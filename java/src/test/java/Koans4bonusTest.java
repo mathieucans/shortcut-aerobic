@@ -25,7 +25,14 @@ public class Koans4bonusTest {
     }
 
     @Test
-    public void Koan04_run_anything() {
+    public void Koan04_inline_method()  {
+        // Go to inside method and introduce duplication by inlining method
+        assertThat(new Koans4bonus().inside()).isEqualTo("inside");
+        assertThat(new Koans4bonus().outside()).isEqualTo("outside");
+    }
+
+    @Test
+    public void Koan05_run_anything() {
         // by using Double ^ / Ctrl, Ctrl
         assertThat("then type gradle test").isEqualTo("all green");
     }
