@@ -1,4 +1,4 @@
-Short cut aerobic 
+Shortcut aerobic 
 ===
 Des exercices simples pour retenir les raccourcis clavier
 --
