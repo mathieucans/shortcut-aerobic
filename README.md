@@ -15,6 +15,8 @@ In each language, some tests invite you to manipulate code with shortcuts.
 # Setup
 
 Open with your IDE the directory of the langage you choose.
+![⚠️ Open the right folder](./setup.png)
+
 Start with koan basic an let yourself be guided.
 Gradually, make the tests pass to green.
 
