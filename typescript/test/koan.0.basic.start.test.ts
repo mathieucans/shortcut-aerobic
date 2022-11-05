@@ -20,12 +20,12 @@ describe('Get started :  navigate to to next failing test', () => {
     });
 
     test('03 - make this test pass and rerun only this test', () => {
-        // by using ^⇧R | Crtl+Shift+F10 with cursor inside this test scope
+        // by using ^⇧R | Ctrl+Shift+F10 with cursor inside this test scope
         expect(true).toBeFalsy();
     });
 
     test('04 - make this test pass and rerun all test of this class', () => {
-        // by using ^⇧R | Crtl+Shift+F10 with cursor between two tests
+        // by using ^⇧R | Ctrl+Shift+F10 with cursor between two tests
         expect(true).toBeFalsy();
     });
 
@@ -38,7 +38,7 @@ describe('Get started :  navigate to to next failing test', () => {
         // by using ^⌥R | Shift+Alt+F10 to run (⌥⌘R | F9 to debug)
         // TIP if you choose Edit configuration,
         // you can select one and modify it to run all test in your workspace
-        // Then you will be abble to run all your project tests by using ^⌥R | Shift+Alt+F10
+        // Then you will be able to run all your project tests by using ^⌥R | Shift+Alt+F10
         expect(true).toBeFalsy();
     });
 

@@ -12,7 +12,7 @@ export default class ModuleA {
         return key === 'trash your mouse' ? 'unlocked' : 'locked';
     }
 
-    theFirstVerseOfTheSongIs(firstVerse: string) : boolean{
+    theFirstVerseOfTheSongIs(firstVerse: string): boolean {
         return firstVerse.toLowerCase().includes("somewhere over the rainbow");
     }
 }

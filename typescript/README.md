@@ -1,4 +1,4 @@
-### Short cut aerobic
+### Shortcut aerobic
 
 Start by first koans and let you drive by tests.
 

@@ -38,6 +38,7 @@ describe('useful shortcuts for refactoring.', () => {
         class Hello {
             constructor(private lang: string) {
             }
+
             say(firstName: string) {
                 // // Extract method from the following line by using ⌘⌥M | Ctrl+Alt+M
                 let hello = '';
@@ -55,7 +56,7 @@ describe('useful shortcuts for refactoring.', () => {
         }
 
         expect(new Hello('fr').say('David')).toEqual('Bonjour David!');
-        expect(new Hello( 'en').say('David')).toEqual('Hello David!');
+        expect(new Hello('en').say('David')).toEqual('Hello David!');
         expect(new Hello('hsqlf').say('David')).toEqual(' David!');
     });
 
@@ -64,7 +65,7 @@ describe('useful shortcuts for refactoring.', () => {
 
     });
 
-    test('05 - move variables into describe scope and init it in  beforeEach function', () => {
+    test('05 - move variables into describe scope and init it in beforeEach function', () => {
         // TIPS : split affectation and declaration by using ⌥⏎ / Alt+Enter
         // then use move Statement up by using ⌘⇧↑ / Ctrl+Shift+Up
         const language = new French();
