@@ -73,6 +73,25 @@ describe('useful shortcuts for refactoring.', () => {
 
         expect(sayHello.hello()).toContain(language.hello());
     });
+
+    test('06 - change parameter order', () => {
+        // invert word1 and word2
+        // Use ⇧⌥⌘← / Ctrl+Shift+Alt+← to navigate back
+        // Use ⇧⌥⌘→ / Ctrl+Shift+Alt+→ to navigate forward
+        function say2Words(word1: string, word2: string): string {
+            return word1 + word2;
+        }
+
+        expect(say2Words(' World', 'Hello')).toEqual('Hello World');
+    })
+
+    test('07 - change for loop to get index', () => {
+        // Change for loop to get index ⌥⏎ / Alt+Enter
+        // then use index to fix test
+        for (const item of [1, 2, 3, 4, 5]) {
+            expect(item % 2).toBe(0)
+        }
+    })
 });
 
 class French {
