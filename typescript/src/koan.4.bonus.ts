@@ -8,7 +8,7 @@ export class Koan4Bonus {
     inside() {
         // Inline following method with ⌥⌘N / Ctrl+Alt+N
         // and change returned string for inside requirement
-        return this .inlinedMe();
+        return this.inlinedMe();
     }
 
     outside() {

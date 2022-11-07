@@ -63,17 +63,33 @@ describe('navigate, selection and deletion', () => {
         expect(message).toEqual('ha ha ha ha ha ha ');
     });
 
-    test('09 - Navigate to sayYes definition', () => {
+    test('09 - Select all occurrences then edit multi carets', () => {
+        // by using ^⌘G | Ctrl+Shift+Alt+J (press Esc to exit multi caret edition)
+        const message = `Lorem ipsum TO_CHANGE sit amet, consectetur adipiscing elit. 
+        Nam TO_CHANGE dignissim sem at posuere. Donec sollicitudin est ac lorem eleifend, 
+        eget aliquam velit consectetur. Aliquam id TO_CHANGE sit amet nisl suscipit iaculis 
+        nec et magna. TO_CHANGE in felis ut lacus gravida faucibus. Suspendisse dictum 
+        at sem ac semper. TO_CHANGE venenatis placerat ipsum vel bibendum. Donec et 
+        diam nibh.`;
+        expect(message).toEqual(`Lorem ipsum allOccurences sit amet, consectetur adipiscing elit. 
+        Nam allOccurences dignissim sem at posuere. Donec sollicitudin est ac lorem eleifend, 
+        eget aliquam velit consectetur. Aliquam id allOccurences sit amet nisl suscipit iaculis 
+        nec et magna. allOccurences in felis ut lacus gravida faucibus. Suspendisse dictum 
+        at sem ac semper. allOccurences venenatis placerat ipsum vel bibendum. Donec et 
+        diam nibh.`);
+    });
+
+    test('10 - Navigate to sayYes definition', () => {
         // by using ⌘B | Ctrl+B and change behaviour to make this test pass
         expect(new ModuleA().sayYes()).toEqual('yes');
     });
 
-    test('10 - Navigate to file structure to change ratio', () => {
+    test('11 - Navigate to file structure to change ratio', () => {
         // Use ⌘F12 / Ctrl+F12 to navigate to ratio declaration
         expect(3 * ratio).toEqual(6);
     });
 
-    test(`11 - Navigate back and forward`, () => {
+    test(`12 - Navigate back and forward`, () => {
         // Use navigate back to find and copy the first verse of the song
         // Use ⌥⌘← / Ctrl+Alt+← to navigate back
         // Use ⌥⌘→ / Ctrl+Alt+→ to navigate forward

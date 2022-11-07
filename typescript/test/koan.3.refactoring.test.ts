@@ -38,6 +38,7 @@ describe('useful shortcuts for refactoring.', () => {
         class Hello {
             constructor(private lang: string) {
             }
+
             say(firstName: string) {
                 // // Extract method from the following line by using ⌘⌥M | Ctrl+Alt+M
                 let hello = '';
@@ -55,7 +56,7 @@ describe('useful shortcuts for refactoring.', () => {
         }
 
         expect(new Hello('fr').say('David')).toEqual('Bonjour David!');
-        expect(new Hello( 'en').say('David')).toEqual('Hello David!');
+        expect(new Hello('en').say('David')).toEqual('Hello David!');
         expect(new Hello('hsqlf').say('David')).toEqual(' David!');
     });
 
@@ -64,7 +65,7 @@ describe('useful shortcuts for refactoring.', () => {
 
     });
 
-    test('05 - move variables into describe scope and init it in  beforeEach function', () => {
+    test('05 - move variables into describe scope and init it in beforeEach function', () => {
         // TIPS : split affectation and declaration by using ⌥⏎ / Alt+Enter
         // then use move Statement up by using ⌘⇧↑ / Ctrl+Shift+Up
         const language = new French();
@@ -72,6 +73,25 @@ describe('useful shortcuts for refactoring.', () => {
 
         expect(sayHello.hello()).toContain(language.hello());
     });
+
+    test('06 - change parameter order', () => {
+        // invert word1 and word2
+        // Use ⇧⌥⌘← / Ctrl+Shift+Alt+← to navigate back
+        // Use ⇧⌥⌘→ / Ctrl+Shift+Alt+→ to navigate forward
+        function say2Words(word1: string, word2: string): string {
+            return word1 + word2;
+        }
+
+        expect(say2Words(' World', 'Hello')).toEqual('Hello World');
+    })
+
+    test('07 - change for loop to get index', () => {
+        // Change for loop to get index ⌥⏎ / Alt+Enter
+        // then use index to fix test
+        for (const item of [1, 2, 3, 4, 5]) {
+            expect(item % 2).toBe(0)
+        }
+    })
 });
 
 class French {

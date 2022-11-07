@@ -25,7 +25,7 @@ words
     });
 
     test('04 - inline method', () => {
-        // Go to inside method and introduce duplication by inlining method
+        // Go inside method and introduce duplication by inlining method
         expect(new Koan4Bonus().inside()).toEqual('inside');
         expect(new Koan4Bonus().outside()).toEqual('outside');
     });
