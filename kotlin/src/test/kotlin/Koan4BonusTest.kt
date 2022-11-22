@@ -25,7 +25,7 @@ class Koan4BonusTest {
 
     @Test
     fun `04 - inline method`()  {
-        // Go to inside method and introduce duplication by inlining method
+        // Go inside method and introduce duplication by inlining method
         assertThat(Koan4bonus().inside()).isEqualTo("inside")
         assertThat(Koan4bonus().outside()).isEqualTo("outside")
     }
