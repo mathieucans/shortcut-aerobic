@@ -71,4 +71,16 @@ class Koan3UsefulShortcutForRefactoring {
 
         assertThat(sayHello.hello()).contains(language.hello())
     }
+
+    @Test
+    fun `06 - change parameter order`() {
+        // invert word1 and word2
+        // Use ⇧⌥⌘← / Ctrl+Shift+Alt+← to navigate back
+        // Use ⇧⌥⌘→ / Ctrl+Shift+Alt+→ to navigate forward
+        fun say2Words(word1: String, word2: String): String {
+            return word1 + word2
+        }
+
+        assertThat(say2Words(" World", "Hello")).isEqualTo("Hello World")
+    }
 }
