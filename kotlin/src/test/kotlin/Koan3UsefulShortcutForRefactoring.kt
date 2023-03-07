@@ -74,9 +74,9 @@ class Koan3UsefulShortcutForRefactoring {
 
     @Test
     fun `06 - change parameter order`() {
-        // invert word1 and word2
-        // Use ⇧⌥⌘← / Ctrl+Shift+Alt+← to navigate back
-        // Use ⇧⌥⌘→ / Ctrl+Shift+Alt+→ to navigate forward
+        // invert word1 and word2 parameters
+        // Use ⇧⌥⌘← / Ctrl+Shift+Alt+← to move element left
+        // Use ⇧⌥⌘→ / Ctrl+Shift+Alt+→ to move element right
         fun say2Words(word1: String, word2: String): String {
             return word1 + word2
         }
