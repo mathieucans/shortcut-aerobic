@@ -7,15 +7,13 @@ class Koans3Refactoring(TestCase):
         # Then extract firstname variable by using ⌘⌥V | Ctrl+Alt+V
         # And make this test pass
         self.assertEqual('Hello firstname!', 'Hello David!');
-#
-# test('02 - extract parameter firstname', () => {
-# // Extract firstname as parameter inside the sayHello function by using ⌘⌥P | Ctrl+Alt+P
-# function sayHello() {
-# return `Hello firstname!`;
-# }
-#
-# expect(sayHello()).toEqual('Hello David!');
-# });
+
+    def testKoan02_extract_parameter_firstname(self):
+        # Extract firstname as parameter inside the sayHello function by using ⌘⌥P | Ctrl+Alt+P
+        def sayHello() :
+           return 'Hello firstname!'
+
+        self.assertEqual(sayHello(),'Hello David!')
 #
 # test('03 - extract field firstname and affect it in constructor', () => {
 #                                                                         // extract field by selecting firstname and by using ⌘⌥F | Ctrl+Alt+F
