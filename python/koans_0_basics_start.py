@@ -24,11 +24,11 @@ class Koans0BasicsStart(TestCase):
         # by using ^⇧R | Crtl+Shift+F10 with cursor between two tests
         self.assertEqual(True, False)
 
-    def test_koan05_you_can_open_run_menu(self):
+    def test_koan05_you_can_open_run_menu_and_select_the_configuration_you_want(self):
         # by using ^⌥R | Shift + Alt + F10 and select the configuration you want
         self.assertEqual(True, False)
 
-    def test_koan06_you_can_open_run_menu_and_select_the_configuration_you_want(self):
+    def test_koan06_you_can_run_all_tests_by_open_run_menu_and_modify_a_configuration(self):
         # by using ^⌥R | Shift + Alt + F10
         # TIP if you choose Edit configuration,
         # you can select one and modify it to run all test in your workspace
