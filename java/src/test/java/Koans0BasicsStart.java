@@ -34,13 +34,13 @@ class Koans0BasicsStart {
     }
 
     @Test
-    void Koan05_you_can_open_run_menu() {
+    void Koan05_you_can_open_run_menu_and_select_the_configuration_you_want() {
         // by using ^⌥R | Shift+Alt+F10 and select the configuration you want
         assertThat(true).isFalse();
     }
 
     @Test
-    void Koan06_you_can_open_run_menu_and_select_the_configuration_you_want() {
+    void Koan06_you_can_run_all_tests_by_open_run_menu_and_modify_a_configuration() {
         // by using ^⌥R | Shift+Alt+F10
         // TIP if you choose Edit configuration,
         // you can select one and modify it to run all test in your workspace

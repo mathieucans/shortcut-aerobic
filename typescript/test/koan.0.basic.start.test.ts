@@ -34,7 +34,7 @@ describe('Get started :  navigate to to next failing test', () => {
         expect(true).toBeFalsy();
     });
 
-    test('06 - you can open run menu and select the configuration you want', () => {
+    test('06 - you can run all tests by open run menu and modify a configuration', () => {
         // by using ^⌥R | Shift+Alt+F10 to run (⌥⌘R | F9 to debug)
         // TIP if you choose Edit configuration,
         // you can select one and modify it to run all test in your workspace

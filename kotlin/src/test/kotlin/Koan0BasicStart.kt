@@ -40,7 +40,7 @@ class Koan0BasicStart {
     }
 
     @Test
-    fun `06 - you can open run menu and select the configuration you want`() {
+    fun `06 - you can run all tests by open run menu and modify a configuration`() {
         // by using ^⌥R | Shift+Alt+F10
         // TIP if you choose Edit configuration,
         // you can select one and modify it to run all test in your workspace
