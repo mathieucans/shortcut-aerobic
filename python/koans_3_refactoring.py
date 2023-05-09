@@ -14,20 +14,15 @@ class Koans3Refactoring(TestCase):
            return 'Hello firstname!'
 
         self.assertEqual(sayHello(),'Hello David!')
-#
-# test('03 - extract field firstname and affect it in constructor', () => {
-#                                                                         // extract field by selecting firstname and by using ⌘⌥F | Ctrl+Alt+F
-#                                                                                                                                // Choose constructor initialization
-#                                                                                                                                                      // then extract parameter to make test pass
-# class Hello {
-# say() {
-# return `Hello firstname!`;
-# }
-# }
-#
-# expect(new Hello().say()).toEqual('Hello David!');
-# });
-#
+
+    def test03_extract_field_firstname_and_affect_it_in_constructor(self):
+        # extract field by selecting firstname and by using ⌘⌥F | Ctrl+Alt+F
+        class Hello:
+            def say(self):
+                return 'Hello firstname!';
+
+        self.assertEqual(Hello().say(),'Hello David!')
+
 # test('04 - extract method hello', () => {
 #                                         // This test already passed.
 #                                                              // Refactoring Hello class to extract a method that say hello
