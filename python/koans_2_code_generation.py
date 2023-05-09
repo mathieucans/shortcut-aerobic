@@ -12,11 +12,10 @@ class Koans2CodeGeneration(TestCase):
         self.assertEqual(buildResult,"codecode")
 
 
-#
-#     test('02 - surround with try catch', () => {
-#                                                // Surround the following line with try catch by using ⌥⌘T | Ctrl+Alt+T
-#     throw new Error('surround me with try catch');
-# });
+    def testKoan02_surround_with_try_except(self):
+        # Surround the following line with try except by using ⌥⌘T | Ctrl+Alt+T
+        raise Exception('surround me with try except')
+
 #
 # test('03 - extract interface Language from French', () => {
 # // Extract interface Language of French and generate English langage.
