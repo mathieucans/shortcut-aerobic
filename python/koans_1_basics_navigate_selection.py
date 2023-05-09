@@ -60,15 +60,32 @@ class Koans1BasicsNavigateSelection(TestCase):
         message += "Un tiens vaut mieux que deux tu l'auras."
         self.assertEqual(message, "ha ha ha ha ha ha ")
 
-    def test_koan09_navigate_to_sayyes_definition(self):
+    def test_koan09_select_all_occurrences_then_edit_multi_carets(self):
+        # by using ^⌘G | Ctrl+Shift+Alt+J (press Esc to exit multi caret edition)
+        message = "Lorem ipsum TO_CHANGE sit amet, consectetur adipiscing elit.\n"
+        message += "Nam TO_CHANGE dignissim sem at posuere. Donec sollicitudin est ac lorem eleife,\n"
+        message += "eget aliquam velit consectetur. Aliquam id TO_CHANGE sit amet nisl suscipit iaculis\n"
+        message += "nec et magna. TO_CHANGE in felis ut lacus gravida faucibus. Suspendisse dictum\n"
+        message += "at sem ac semper. TO_CHANGE venenatis placerat ipsum vel bibendum. Donec et\n"
+        message += "diam nibh.\n"
+
+        expected = "Lorem ipsum allOccurences sit amet, consectetur adipiscing elit.\n"
+        expected += "Nam allOccurences dignissim sem at posuere. Donec sollicitudin est ac lorem eleife,\n"
+        expected += "eget aliquam velit consectetur. Aliquam id allOccurences sit amet nisl suscipit iaculis\n"
+        expected += "nec et magna. allOccurences in felis ut lacus gravida faucibus. Suspendisse dictum\n"
+        expected += "at sem ac semper. allOccurences venenatis placerat ipsum vel bibendum. Donec et\n"
+        expected += "diam nibh.\n"
+        self.assertEqual(message, expected)
+
+    def test_koan10_navigate_to_sayyes_definition(self):
         # by using ⌘B | Ctrl+B and change behaviour to make this test pass
         self.assertEqual(ModuleA().sayYes(), "yes")
 
-    def test_koan10_navigate_to_file_structure_to_change_ratio(self):
+    def test_koan11_navigate_to_file_structure_to_change_ratio(self):
         # Use ⌘F12 / Ctrl+F12 to navigate to ratio declaration
         self.assertEqual(3 * self.ratio(), 6)
 
-    def test_koan11_navigate_back_and_forward(self):
+    def test_koan12_navigate_back_and_forward(self):
         # Use navigate back to find and copy the first verse of the song
         self.assertTrue(ModuleA().theFirstVerseOfTheSongIs("copy here the first verse of the song"))
 
