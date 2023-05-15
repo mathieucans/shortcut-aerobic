@@ -11,3 +11,7 @@ class SomeBonusShortcut(TestCase):
         lines += 'words ' + '--- in terminal too'
 
         self.assertEqual(lines,'keep the firsts words ')
+
+    def testKoan02_past_from_history(self):
+        # by using ⌘⇧V / Ctrl+Shift+V
+        self.assertEqual('past here an old text you have copy', ' --- works')
