@@ -1,9 +1,9 @@
 import {Koan4Bonus} from "../src/koan.4.bonus";
 
-describe('some bonus shortkut', () => {
+describe('some bonus shortcut', () => {
     test('01 - cut up to line end', () => {
         const lines = `keep --- delete me with ^K
-the --- this short couts
+the --- this short cuts
 firsts --- works
 words --- in terminal too                 
  `
