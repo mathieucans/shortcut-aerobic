@@ -17,7 +17,7 @@ class Koans3Refactoring(TestCase):
 
         self.assertEqual(sayHello(), 'Hello David!')
 
-    def test03_extract_field_firstname_and_affect_it_in_constructor(self):
+    def testKoan03_extract_field_firstname_and_affect_it_in_constructor(self):
         # extract field by selecting firstname and by using ⌘⌥F | Ctrl+Alt+F
         class Hello:
             def say(self):
@@ -25,7 +25,7 @@ class Koans3Refactoring(TestCase):
 
         self.assertEqual(Hello().say(), 'Hello David!')
 
-    def test04_extract_method_hello(self):
+    def testKoan04_extract_method_hello(self):
         # This test already passed.
         # Refactoring Hello class to extract a method that say hello
         class Hello:
@@ -47,19 +47,18 @@ class Koans3Refactoring(TestCase):
         self.assertEqual(Hello('fr').say('David'), 'Bonjour David!')
         self.assertEqual(Hello('en').say('David'), 'Hello David!')
         self.assertEqual(Hello('hsqlf').say('David'), ' David!')
-#
-#
-# beforeEach(() => {
-#
-# });
-#
-# test('05 - move variables into describe scope and init it in beforeEach function', () => {
-#                                                                                          // TIPS : split affectation and declaration by using ⌥⏎ / Alt+Enter
-#                                                                                                                                                    // then use move Statement up by using ⌘⇧↑ / Ctrl+Shift+Up
-# const language = new French();
-# const sayHello = new SayHello(language);
-#
-# expect(sayHello.hello()).toContain(language.hello());
+
+
+    def setUp(self):
+        pass
+
+    def testKoan05_move_variables_into_class_scope_and_init_it_in_setUp_function(self):
+        # TIPS : extract field by selecting language and by using ⌘⌥F | Ctrl+Alt+F
+        # then use move Statement up by using ⌘⇧↑ / Ctrl+Shift+Up
+        language = French()
+        sayHello = SayHello(language)
+
+        self.assertIn(language.hello(), sayHello.hello())
 # });
 #
 # test('06 - change parameter order', () => {
@@ -82,18 +81,13 @@ class Koans3Refactoring(TestCase):
 # })
 # });
 #
-# class French {
-# hello() {
-# return 'Salut';
-# }
-# }
-#
-# class SayHello {
-# constructor(private language: French) {
-#
-# }
-#
-# hello() {
-# return `${this.language.hello()} David!`;
-# }
-# }
+class French :
+    def hello(self):
+        return 'Salut'
+class SayHello :
+    language: French
+    def __init__(self, language: French) :
+        self.language = language
+
+    def hello(self) :
+        return self.language.hello() + ' David!'
