@@ -1,4 +1,6 @@
+import string
 from unittest import TestCase
+
 
 # useful shortcuts for refactoring.
 class Koans3Refactoring(TestCase):
@@ -10,10 +12,10 @@ class Koans3Refactoring(TestCase):
 
     def testKoan02_extract_parameter_firstname(self):
         # Extract firstname as parameter inside the sayHello function by using ⌘⌥P | Ctrl+Alt+P
-        def sayHello() :
-           return 'Hello firstname!'
+        def sayHello():
+            return 'Hello firstname!'
 
-        self.assertEqual(sayHello(),'Hello David!')
+        self.assertEqual(sayHello(), 'Hello David!')
 
     def test03_extract_field_firstname_and_affect_it_in_constructor(self):
         # extract field by selecting firstname and by using ⌘⌥F | Ctrl+Alt+F
@@ -21,35 +23,30 @@ class Koans3Refactoring(TestCase):
             def say(self):
                 return 'Hello firstname!';
 
-        self.assertEqual(Hello().say(),'Hello David!')
+        self.assertEqual(Hello().say(), 'Hello David!')
 
-# test('04 - extract method hello', () => {
-#                                         // This test already passed.
-#                                                              // Refactoring Hello class to extract a method that say hello
-# class Hello {
-# constructor(private lang: string) {
-# }
-#
-# say(firstName: string) {
-#                        // // Extract method from the following line by using ⌘⌥M | Ctrl+Alt+M
-# let hello = '';
-# switch (this.lang.toLowerCase()) {
-#     case 'fr': \
-# hello = 'Bonjour';
-# break;
-# case 'en':
-# hello = 'Hello';
-# break;
-# }
-# // to this line
-# return `${hello} ${firstName}!`;
-# }
-# }
-#
-# expect(new Hello('fr').say('David')).toEqual('Bonjour David!');
-# expect(new Hello('en').say('David')).toEqual('Hello David!');
-# expect(new Hello('hsqlf').say('David')).toEqual(' David!');
-# });
+    def test04_extract_method_hello(self):
+        # This test already passed.
+        # Refactoring Hello class to extract a method that say hello
+        class Hello:
+            lang: string
+
+            def __init__(self, lang: string):
+                self.lang = lang
+
+            def say(self, firstName: string):
+                # Extract hello method from the following line by using ⌘⌥M | Ctrl+Alt+M
+                switch = {
+                    'fr': 'Bonjour',
+                    'en': 'Hello'
+                }
+                hello = switch.get(self.lang, '')
+                # to this line
+                return hello + ' ' + firstName + '!'
+
+        self.assertEqual(Hello('fr').say('David'), 'Bonjour David!')
+        self.assertEqual(Hello('en').say('David'), 'Hello David!')
+        self.assertEqual(Hello('hsqlf').say('David'), ' David!')
 #
 #
 # beforeEach(() => {
