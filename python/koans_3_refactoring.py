@@ -8,20 +8,20 @@ class Koans3Refactoring(TestCase):
         # Replace with template string by using ⌥⏎ / Alt+Enter
         # Then extract firstname variable by using ⌘⌥V | Ctrl+Alt+V
         # And make this test pass
-        self.assertEqual('Hello firstname!', 'Hello David!');
+        self.assertEqual('Hello firstname!', 'Hello David!')
 
     def testKoan02_extract_parameter_firstname(self):
         # Extract firstname as parameter inside the sayHello function by using ⌘⌥P | Ctrl+Alt+P
-        def sayHello():
+        def say_hello():
             return 'Hello firstname!'
 
-        self.assertEqual(sayHello(), 'Hello David!')
+        self.assertEqual(say_hello(), 'Hello David!')
 
     def testKoan03_extract_field_firstname_and_affect_it_in_constructor(self):
         # extract field by selecting firstname and by using ⌘⌥F | Ctrl+Alt+F
         class Hello:
             def say(self):
-                return 'Hello firstname!';
+                return 'Hello firstname!'
 
         self.assertEqual(Hello().say(), 'Hello David!')
 
@@ -34,7 +34,7 @@ class Koans3Refactoring(TestCase):
             def __init__(self, lang: string):
                 self.lang = lang
 
-            def say(self, firstName: string):
+            def say(self, first_name: string):
                 # Extract hello method from the following line by using ⌘⌥M | Ctrl+Alt+M
                 switch = {
                     'fr': 'Bonjour',
@@ -42,12 +42,11 @@ class Koans3Refactoring(TestCase):
                 }
                 hello = switch.get(self.lang, '')
                 # to this line
-                return hello + ' ' + firstName + '!'
+                return hello + ' ' + first_name + '!'
 
         self.assertEqual(Hello('fr').say('David'), 'Bonjour David!')
         self.assertEqual(Hello('en').say('David'), 'Hello David!')
         self.assertEqual(Hello('hsqlf').say('David'), ' David!')
-
 
     def setUp(self):
         pass
@@ -56,38 +55,21 @@ class Koans3Refactoring(TestCase):
         # TIPS : extract field by selecting language and by using ⌘⌥F | Ctrl+Alt+F
         # then use move Statement up by using ⌘⇧↑ / Ctrl+Shift+Up
         language = French()
-        sayHello = SayHello(language)
+        say_hello = SayHello(language)
 
-        self.assertIn(language.hello(), sayHello.hello())
-# });
-#
-# test('06 - change parameter order', () => {
-#                                           // invert word1 and word2
-#                                                     // Use ⇧⌥⌘← / Ctrl+Shift+Alt+← to navigate back
-#                                                                                                // Use ⇧⌥⌘→ / Ctrl+Shift+Alt+→ to navigate forward
-# function say2Words(word1: string, word2: string): string {
-# return word1 + word2;
-# }
-#
-# expect(say2Words(' World', 'Hello')).toEqual('Hello World');
-# })
-#
-# test('07 - change for loop to get index', () => {
-#                                                 // Change for loop to get index ⌥⏎ / Alt+Enter
-# // then use index to fix test
-# for (const item of [1, 2, 3, 4, 5]) {
-# expect(item % 2).toBe(0)
-# }
-# })
-# });
-#
-class French :
+        self.assertIn(language.hello(), say_hello.hello())
+
+
+class French:
     def hello(self):
         return 'Salut'
-class SayHello :
+
+
+class SayHello:
     language: French
-    def __init__(self, language: French) :
+
+    def __init__(self, language: French):
         self.language = language
 
-    def hello(self) :
+    def hello(self):
         return self.language.hello() + ' David!'
