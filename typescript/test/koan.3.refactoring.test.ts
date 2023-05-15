@@ -76,8 +76,8 @@ describe('useful shortcuts for refactoring.', () => {
 
     test('06 - change parameter order', () => {
         // invert word1 and word2
-        // Use ⇧⌥⌘← / Ctrl+Shift+Alt+← to navigate back
-        // Use ⇧⌥⌘→ / Ctrl+Shift+Alt+→ to navigate forward
+        // Use ⇧⌥⌘← / Ctrl+Shift+Alt+← to move element left
+        // Use ⇧⌥⌘→ / Ctrl+Shift+Alt+→ to move element right
         function say2Words(word1: string, word2: string): string {
             return word1 + word2;
         }
