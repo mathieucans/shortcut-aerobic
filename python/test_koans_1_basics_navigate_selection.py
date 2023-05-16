@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from module_a import ModuleA
+from src.module_a import ModuleA
 
 
 class TestKoans1BasicsNavigateSelection(TestCase):

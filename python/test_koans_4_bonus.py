@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from koans_4_bonus import Koans4Bonus
+from src.koans_4_bonus import Koans4Bonus
 
 
 class TestKoans4Bonus(TestCase):
