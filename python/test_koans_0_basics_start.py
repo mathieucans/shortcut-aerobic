@@ -2,7 +2,7 @@ from unittest import TestCase
 
 
 # Start by these koans to be friendly with running test with shortcuts
-class Koans0BasicsStart(TestCase):
+class TestKoans0BasicsStart(TestCase):
 
     def test_koan00_one_shortcut_to_rule_them_all(self):
         # use ⌘⇧A | Ctrl+Shift+A and search a command to toggle case

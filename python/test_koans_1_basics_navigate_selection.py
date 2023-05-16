@@ -3,7 +3,7 @@ from unittest import TestCase
 from module_a import ModuleA
 
 
-class Koans1BasicsNavigateSelection(TestCase):
+class TestKoans1BasicsNavigateSelection(TestCase):
     @staticmethod
     def ratio(): return 0.5
 

@@ -2,7 +2,7 @@ from unittest import TestCase
 
 
 # Generate code by using your IDE
-class Koans2CodeGeneration(TestCase):
+class TestKoans2CodeGeneration(TestCase):
     def testKoan01_uncomment_and_generate_class_and_method(self):
         # by using ⌥⏎ | Alt+Enter
         # TIPS : you can navigate through error code by using F2
@@ -20,7 +20,8 @@ class Koans2CodeGeneration(TestCase):
         # Extract abstract class Language of French and generate English langage.
         # Then change SayHello parameter and field type to speak english.
         # Tips : To extract superclass, display the refactoring menu by using ^T | Ctrl+Shift+Alt+T
-        # Check the methods you want to have in your abstract class and make English implement it by using ⌥⏎ | Alt+Enter
+        # Check the methods you want to have in your abstract class and make English
+        # implement it by using ⌥⏎ | Alt+Enter
 
         # language = English()     # Uncomment this line
         language = French()  # Comment this line

@@ -3,7 +3,7 @@ from unittest import TestCase
 
 
 # useful shortcuts for refactoring.
-class Koans3Refactoring(TestCase):
+class TestKoans3Refactoring(TestCase):
     def testKoan01_extract_firstname_to_a_variable(self):
         # Replace with template string by using ⌥⏎ / Alt+Enter
         # Then extract firstname variable by using ⌘⌥V | Ctrl+Alt+V
