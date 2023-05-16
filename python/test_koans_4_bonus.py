@@ -29,4 +29,4 @@ class TestKoans4Bonus(TestCase):
 
     def testKoan05_run_anything(self) :
         # by using Double ^ / Ctrl, Ctrl
-        self.assertEqual('then type npm run test', 'all green')
+        self.assertEqual('execute the command tu run all test', 'python -m unittest discover -v')
