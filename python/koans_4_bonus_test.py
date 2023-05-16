@@ -21,3 +21,8 @@ class TestKoans4Bonus(TestCase):
     def testKoan03_got_to_same_named_test(self):
         # by using ⌘⇧T / Ctrl+Shift+T
         self.assertEqual(Koans4Bonus().goToTest(), 'go to test')
+
+    def testKoan04_inline_method(self) :
+        # Go inside method and introduce duplication by inlining method
+        self.assertEqual(Koans4Bonus().inside(), 'inside')
+        self.assertEqual(Koans4Bonus().outside(), 'outside')
