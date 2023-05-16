@@ -1,8 +1,10 @@
 import unittest
 from unittest import TestCase
 
+from koans_4_bonus import Koans4Bonus
 
-class SomeBonusShortcut(TestCase):
+
+class TestKoans4Bonus(TestCase):
     def testKoan01_cut_up_to_line_end(self):
         lines=''
         lines += 'keep ' + '--- delete me with ^K'
@@ -15,3 +17,7 @@ class SomeBonusShortcut(TestCase):
     def testKoan02_past_from_history(self):
         # by using ⌘⇧V / Ctrl+Shift+V
         self.assertEqual('past here an old text you have copy', ' --- works')
+
+    def testKoan03_got_to_same_named_test(self):
+        # by using ⌘⇧T / Ctrl+Shift+T
+        self.assertEqual(Koans4Bonus().goToTest(), 'go to test')
