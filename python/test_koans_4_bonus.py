@@ -26,3 +26,7 @@ class TestKoans4Bonus(TestCase):
         # Go inside method and introduce duplication by inlining method
         self.assertEqual(Koans4Bonus().inside(), 'inside')
         self.assertEqual(Koans4Bonus().outside(), 'outside')
+
+    def testKoan05_run_anything(self) :
+        # by using Double ^ / Ctrl, Ctrl
+        self.assertEqual('then type npm run test', 'all green')
