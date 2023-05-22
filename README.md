@@ -27,3 +27,4 @@ Have fun!
 - [force short cut plugin](https://plugins.jetbrains.com/plugin/8357-force-shortcuts) : a plugin that prevents you from using your mouse and offers you alternatives with shortcut
 - [presentation assistant](https://plugins.jetbrains.com/plugin/7345-presentation-assistant) : a plugin that display the shortcut you've just used
 - [Atelier maîtriser son IDE](https://github.com/sanlaville/master-your-ide) : another workshop by Rémy Sanlaville
+- [IntelliJ IDEA Keybindings](https://marketplace.visualstudio.com/items?itemName=k--kato.intellij-idea-keybindings) ‡
