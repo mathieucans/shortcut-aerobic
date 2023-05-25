@@ -17,7 +17,7 @@ class TestKoans1BasicsNavigateSelection(TestCase):
         # Delete all unused spaces by using delete to Word End ⌥⌦ / Ctrl+Delete
         self.assertTrue("    " not in "Delete spaces after me:                             to much spaces kill spaces")
 
-    def test_Koan03_deletion_to_word_start_word(self):
+    def test_koan03_deletion_to_word_start_word(self):
         # Delete MouseForEver by using delete to Word Start ⌥⌫ / Ctrl+Backspace
         self.assertTrue("MouseForEver" not in "delete the last straw!MouseForEver")
 
