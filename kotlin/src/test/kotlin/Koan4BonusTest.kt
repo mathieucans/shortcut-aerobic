@@ -20,14 +20,14 @@ class Koan4BonusTest {
     @Test
     fun `03 - got to same named test`() {
         // by using ⌘⇧T / Ctrl+Shift+T
-        assertThat(Koan4bonus().goToTest()).isEqualTo("go to test")
+        assertThat(Koan4Bonus().goToTest()).isEqualTo("go to test")
     }
 
     @Test
     fun `04 - inline method`()  {
         // Go inside method and introduce duplication by inlining method
-        assertThat(Koan4bonus().inside()).isEqualTo("inside")
-        assertThat(Koan4bonus().outside()).isEqualTo("outside")
+        assertThat(Koan4Bonus().inside()).isEqualTo("inside")
+        assertThat(Koan4Bonus().outside()).isEqualTo("outside")
     }
 
     @Test

@@ -10,40 +10,39 @@ class TestKoans1BasicsNavigateSelection(TestCase):
     def test_koan01_navigate_to_end_block_and_find_the_key_to_open_the_door(self):
         # TIPS : on laptop keyboard, you can navigate to end of file by using ⌘A,→  / Ctrl+A, →
         self.assertEqual(
-            ModuleA().open_the_door("the key is at the end of this file"),
+            ModuleA().open_the_door("trash your mouse"),
             "unlock")
 
     def test_koan02_deletion_to_next_word(self):
         # Delete all unused spaces by using delete to Word End ⌥⌦ / Ctrl+Delete
-        self.assertTrue("    " not in "Delete spaces after me:                             to much spaces kill spaces")
+        self.assertTrue("    " not in "Delete spaces after me:to much spaces kill spaces")
 
     def test_koan03_deletion_to_word_start_word(self):
         # Delete MouseForEver by using delete to Word Start ⌥⌫ / Ctrl+Backspace
-        self.assertTrue("MouseForEver" not in "delete the last straw!MouseForEver")
+        self.assertTrue("MouseForEver" not in "delete the last straw!")
 
     def test_koan04_delete_the_failing_line(self):
         delete_unused_line = "This test should pass"
-        delete_unused_line += "*** delete me by using ⌘⌫ / Ctrl+Y ****"
         self.assertEqual(delete_unused_line, "This test should pass")
 
     def test_koan05_extend_selection(self):
         # by using ⌥↑ | Ctrl+W
-        self.assertEqual("***** SELECT ME WITH EXTEND SELECTION*****", "selected")
+        self.assertEqual("selected", "selected")
 
     def test_koan06_extend_selection_code_scope(self):
         # extend selection depends on scope, by using ⌥↑ | Ctrl+W select only what needed in line below
         self.assertEqual(ModuleA().test(), "youpii")
         # and paste it in the following assertion
-        self.assertEqual("**** REPLACE ME ****", "ModuleA().test()")
+        self.assertEqual("ModuleA().test()", "ModuleA().test()")
 
     def test_koan07_edit_multiple_lines_with_clone_caret(self):
         # Use ⌥,⌥↓ / Ctrl,Ctrl+↓  to clone caret (press Esc to exit multi caret edition)
         # Edit song to match expected lyrics
         song = ""
-        song += "Somewhere over the rainbow"
-        song += "Way up high"
-        song += "And the dreams that you dream of"
-        song += "Once in a lullaby, oh"
+        song += " > Somewhere over the rainbow\n"
+        song += " > Way up high\n"
+        song += " > And the dreams that you dream of\n"
+        song += " > Once in a lullaby, oh\n"
 
         self.assertEqual(song, " > Somewhere over the rainbow\n"
                          + " > Way up high\n"

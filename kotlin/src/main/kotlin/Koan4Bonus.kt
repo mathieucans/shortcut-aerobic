@@ -1,4 +1,4 @@
-class Koan4bonus {
+class Koan4Bonus {
     fun goToTest(): String {
         // by using ⌘⇧T / Ctrl+Shift+T
         return "remove me, uncomment the following line and go back to test"
