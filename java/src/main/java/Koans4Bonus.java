@@ -1,4 +1,4 @@
-public class Koans4bonus {
+public class Koans4Bonus {
     public String goToTest() {
         // by using ⌘⇧T / Ctrl+Shift+T
         return "remove me, uncomment the following line and go back to test";
