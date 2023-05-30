@@ -6,11 +6,15 @@ Simple exercises to learn shortcuts
 You want to be more efficient in your everyday work? 
 You know there are shortcuts, but you can never remember them?
 Let's practice together and discover new tricks to program faster. 
-Available languages: .net, java, kotlin, typescript.
+Available languages: .net, java, kotlin, typescript and python.
 
-Exercices are guided for InteliJ & Visual Studio Resharper, 
-but nothing prevents you from doing them with your favorite IDE.
 In each language, some tests invite you to manipulate code with shortcuts.
+
+Exercices are guided for IntelliJ & Visual Studio Resharper, 
+but nothing prevents you from doing them with your favorite IDE.
+
+Dear visual studio users, install the [IntelliJ IDEA Keybindings](https://marketplace.visualstudio.com/items?itemName=k--kato.intellij-idea-keybindings)
+plugin to be guided in most of proposed exercices. 
 
 # Setup
 
@@ -27,4 +31,3 @@ Have fun!
 - [force short cut plugin](https://plugins.jetbrains.com/plugin/8357-force-shortcuts) : a plugin that prevents you from using your mouse and offers you alternatives with shortcut
 - [presentation assistant](https://plugins.jetbrains.com/plugin/7345-presentation-assistant) : a plugin that display the shortcut you've just used
 - [Atelier maîtriser son IDE](https://github.com/sanlaville/master-your-ide) : another workshop by Rémy Sanlaville
-- [IntelliJ IDEA Keybindings](https://marketplace.visualstudio.com/items?itemName=k--kato.intellij-idea-keybindings) ‡
