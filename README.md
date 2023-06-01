@@ -27,7 +27,8 @@ Gradually, make the tests pass to green.
 Have fun!
 
 # References
-- [learn IDE feature plugin](https://plugins.jetbrains.com/plugin/8554-ide-features-trainer) : a plugin to learn more shortcuts
-- [force short cut plugin](https://plugins.jetbrains.com/plugin/8357-force-shortcuts) : a plugin that prevents you from using your mouse and offers you alternatives with shortcut
-- [presentation assistant](https://plugins.jetbrains.com/plugin/7345-presentation-assistant) : a plugin that display the shortcut you've just used
+- [learn IDE feature](https://plugins.jetbrains.com/plugin/8554-ide-features-trainer) : a plugin to learn more shortcuts
+- [force shortcuts](https://plugins.jetbrains.com/plugin/8357-force-shortcuts) : a plugin that prevents you from using your mouse and offers you alternatives with shortcut
+- [key promoter x](https://plugins.jetbrains.com/plugin/9792-key-promoter-x) : less intrusive than force shortcut, displays only popup and calculate a score when you use your mouse instead of shortcuts
+- [presentation assistant](https://plugins.jetbrains.com/plugin/7345-presentation-assistant) : a plugin that display the shortcut you've just used (very usefull for pair and ensemble programmers)
 - [Atelier maîtriser son IDE](https://github.com/sanlaville/master-your-ide) : another workshop by Rémy Sanlaville
