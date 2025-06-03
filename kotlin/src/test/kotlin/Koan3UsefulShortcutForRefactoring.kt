@@ -42,7 +42,7 @@ class Koan3UsefulShortcutForRefactoring {
             fun say(firstName: String): String {
                 // Extract method from the following line by using ⌘⌥M | Ctrl+Alt+M
                 var hello = ""
-                when (this.lang.toLowerCase()) {
+                when (this.lang.lowercase()) {
                     "fr" -> hello = "Bonjour"
                     "en" -> hello = "Hello"
                 }

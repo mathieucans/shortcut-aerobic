@@ -15,6 +15,6 @@ class ModuleA {
     }
 
     fun theFirstVerseOfTheSongIs(firstVerse: String): Boolean {
-        return firstVerse.toLowerCase().contains("somewhere over the rainbow")
+        return firstVerse.lowercase().contains("somewhere over the rainbow")
     }
 }
