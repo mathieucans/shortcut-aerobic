@@ -6,7 +6,7 @@ class Koan2GenerateCodeByUsingYourIde {
     fun `01 - uncomment and generate class and method`(){
         // by using ⌥⏎ | Alt+Enter
         // TIPS : you can navigate through error code by using F2
-        val buildResult = "code"
+        var buildResult = "code"
 
         //buildResult = RobotCode().repeat(buildResult)
 
