@@ -1,7 +1,12 @@
 ### Shortcut aerobic
 
-Start by [first koans](./test_koans_0_basics_start.py) and let you drive by tests.
+Start by install Poetry and dependencies 
 
-See also : 
- [Intelij python plugin](https://plugins.jetbrains.com/plugin/631-python)
- 
+```bash
+    poetry install
+```
+
+copy shortcut from `.vscode/keybindings.json`in your shortcut json file 
+
+
+then continue by following [first koans](./test_koans_0_basics_start.py) and let you drive by tests.
