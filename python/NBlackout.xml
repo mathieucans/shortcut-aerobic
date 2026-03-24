@@ -1,0 +1,216 @@
+<keymap version="1" name="NBlackout" parent="Visual Studio">
+  <action id="ActivateTODOToolWindow">
+    <keyboard-shortcut first-keystroke="alt t" second-keystroke="alt d" />
+  </action>
+  <action id="Arrangement.Alias.Rule.Match.Condition.Move.Down" />
+  <action id="Arrangement.Rule.Group.Condition.Move.Down" />
+  <action id="Arrangement.Rule.Group.Condition.Move.Up" />
+  <action id="Arrangement.Rule.Match.Condition.Move.Down" />
+  <action id="Arrangement.Rule.Match.Condition.Move.Up" />
+  <action id="Back">
+    <mouse-shortcut keystroke="button4" />
+    <keyboard-shortcut first-keystroke="alt left" />
+  </action>
+  <action id="CIDR.Debugger.ShowInMemoryView" />
+  <action id="ChangesView.Rename" />
+  <action id="CloseAllUnpinnedEditors">
+    <keyboard-shortcut first-keystroke="ctrl p" second-keystroke="ctrl w" />
+  </action>
+  <action id="CollapseAll">
+    <keyboard-shortcut first-keystroke="ctrl minus" />
+  </action>
+  <action id="CollapseExpandableComponent">
+    <keyboard-shortcut first-keystroke="ctrl minus" />
+  </action>
+  <action id="CollapseRegionRecursively">
+    <keyboard-shortcut first-keystroke="ctrl m" second-keystroke="ctrl l" />
+  </action>
+  <action id="CompareTwoFiles" />
+  <action id="Console.Execute.Multiline" />
+  <action id="Console.TableResult.EditValueMaximized" />
+  <action id="Console.TableResult.PreviousPage" />
+  <action id="Console.TableResult.ShowRecordView" />
+  <action id="ContextHelp" />
+  <action id="DirDiffMenu.SynchronizeDiff.All" />
+  <action id="EditorCloneCaretAbove">
+    <keyboard-shortcut first-keystroke="shift alt up" />
+  </action>
+  <action id="EditorCloneCaretBelow">
+    <keyboard-shortcut first-keystroke="shift alt down" />
+  </action>
+  <action id="EditorCompleteStatement" />
+  <action id="EditorDecreaseFontSize">
+    <keyboard-shortcut first-keystroke="ctrl subtract" />
+  </action>
+  <action id="EditorDeleteLine">
+    <keyboard-shortcut first-keystroke="ctrl d" />
+  </action>
+  <action id="EditorDuplicate" />
+  <action id="EditorIncreaseFontSize">
+    <keyboard-shortcut first-keystroke="ctrl add" />
+  </action>
+  <action id="EditorLookupDown" />
+  <action id="EditorLookupUp" />
+  <action id="EditorResetFontSize">
+    <keyboard-shortcut first-keystroke="ctrl 0" />
+  </action>
+  <action id="EditorScrollDown" />
+  <action id="EditorScrollUp" />
+  <action id="EditorStartNewLine" />
+  <action id="EditorStartNewLineBefore" />
+  <action id="EditorToggleColumnMode" />
+  <action id="ExpandAll">
+    <keyboard-shortcut first-keystroke="ctrl equals" />
+  </action>
+  <action id="ExpandExpandableComponent">
+    <keyboard-shortcut first-keystroke="ctrl equals" />
+  </action>
+  <action id="ExternalSystem.CollapseAll">
+    <keyboard-shortcut first-keystroke="ctrl minus" />
+  </action>
+  <action id="ExternalSystem.ExpandAll">
+    <keyboard-shortcut first-keystroke="ctrl equals" />
+  </action>
+  <action id="FileChooser.GotoDesktop" />
+  <action id="FileChooser.TogglePathBar" />
+  <action id="Forward">
+    <mouse-shortcut keystroke="button5" />
+    <keyboard-shortcut first-keystroke="alt right" />
+  </action>
+  <action id="Git.Rename.Local.Branch" />
+  <action id="Git.Reword.Commit" />
+  <action id="GotoBookmark0" />
+  <action id="GotoImplementation">
+    <keyboard-shortcut first-keystroke="ctrl f12" />
+  </action>
+  <action id="GotoPreviousError" />
+  <action id="GotoTest">
+    <keyboard-shortcut first-keystroke="ctrl enter" />
+  </action>
+  <action id="Graph.ActualSize">
+    <keyboard-shortcut first-keystroke="ctrl divide" />
+  </action>
+  <action id="GuidGenerator">
+    <keyboard-shortcut first-keystroke="alt g" />
+  </action>
+  <action id="HippieCompletion" />
+  <action id="Images.Editor.ActualSize">
+    <keyboard-shortcut first-keystroke="ctrl divide" />
+  </action>
+  <action id="Images.Editor.ZoomIn">
+    <keyboard-shortcut first-keystroke="ctrl equals" />
+  </action>
+  <action id="Images.Editor.ZoomOut">
+    <keyboard-shortcut first-keystroke="ctrl minus" />
+  </action>
+  <action id="InsertInlineCompletionAction">
+    <keyboard-shortcut first-keystroke="ctrl tab" />
+  </action>
+  <action id="LocateInSolutionView">
+    <keyboard-shortcut first-keystroke="ctrl l" />
+  </action>
+  <action id="MethodDown" />
+  <action id="MethodOverloadSwitchDown" />
+  <action id="MethodOverloadSwitchUp" />
+  <action id="MethodUp" />
+  <action id="MoveLineDown">
+    <keyboard-shortcut first-keystroke="alt down" />
+  </action>
+  <action id="MoveLineUp">
+    <keyboard-shortcut first-keystroke="alt up" />
+  </action>
+  <action id="NextTab" />
+  <action id="OpenInRightSplit">
+    <mouse-shortcut keystroke="alt button1 doubleClick" />
+  </action>
+  <action id="PinActiveTab">
+    <keyboard-shortcut first-keystroke="ctrl p" second-keystroke="ctrl p" />
+  </action>
+  <action id="PreviousOccurence">
+    <keyboard-shortcut first-keystroke="shift f8" />
+  </action>
+  <action id="PreviousTab" />
+  <action id="Print" />
+  <action id="ReSharperGotoNextErrorInSolution">
+    <keyboard-shortcut first-keystroke="shift alt page_down" />
+    <keyboard-shortcut first-keystroke="alt page_down" />
+  </action>
+  <action id="ReSharperGotoPrevErrorInSolution">
+    <keyboard-shortcut first-keystroke="shift alt page_up" />
+    <keyboard-shortcut first-keystroke="alt page_up" />
+  </action>
+  <action id="RecentFiles" />
+  <action id="Rerun" />
+  <action id="RiderCoveringTestsPopupDebugSelectedTestsAction" />
+  <action id="RiderDotCoverCoveringTestsPopupRunAllTestsAction" />
+  <action id="RiderDotCoverUnitTestCoverContextAction">
+    <keyboard-shortcut first-keystroke="ctrl u" second-keystroke="c" />
+    <keyboard-shortcut first-keystroke="ctrl u" second-keystroke="ctrl c" />
+  </action>
+  <action id="RiderGenerateUnitTestAction" />
+  <action id="RiderGoToLinkedTypesAction">
+    <keyboard-shortcut first-keystroke="ctrl enter" />
+  </action>
+  <action id="RiderNuGetToggleDependenciesExpanderAction" />
+  <action id="RiderUnitTestDebugContextTwAction" />
+  <action id="RiderUnitTestRunContextAction">
+    <keyboard-shortcut first-keystroke="shift enter" />
+  </action>
+  <action id="RiderUnitTestRunContextTwAction">
+    <keyboard-shortcut first-keystroke="shift enter" />
+  </action>
+  <action id="RiderUnitTestRunSolutionTwAction" />
+  <action id="RunClass">
+    <keyboard-shortcut first-keystroke="shift enter" />
+  </action>
+  <action id="RunDashboard.CopyConfiguration" />
+  <action id="SearchEverywhere.NavigateToNextGroup">
+    <keyboard-shortcut first-keystroke="page_down" />
+  </action>
+  <action id="SearchEverywhere.NavigateToPrevGroup">
+    <keyboard-shortcut first-keystroke="page_up" />
+  </action>
+  <action id="SelectAllOccurrences">
+    <keyboard-shortcut first-keystroke="shift alt colon" />
+  </action>
+  <action id="SelectInProjectView">
+    <keyboard-shortcut first-keystroke="ctrl l" />
+  </action>
+  <action id="SelectNextOccurrence">
+    <keyboard-shortcut first-keystroke="shift alt semicolon" />
+    <keyboard-shortcut first-keystroke="ctrl down" />
+  </action>
+  <action id="SendEOF" />
+  <action id="ShelvedChanges.Rename" />
+  <action id="ShowContent" />
+  <action id="ShowSearchHistory" />
+  <action id="SplitChooser.Duplicate" />
+  <action id="StepInto" />
+  <action id="Switcher">
+    <keyboard-shortcut first-keystroke="shift ctrl tab" />
+  </action>
+  <action id="SwitcherPreviousProblem" />
+  <action id="Terminal.ClearBuffer" />
+  <action id="Terminal.CloseSession" />
+  <action id="Terminal.LineUp" />
+  <action id="Terminal.SearchInCommandHistory" />
+  <action id="Terminal.SelectBlockAbove">
+    <keyboard-shortcut first-keystroke="up" />
+  </action>
+  <action id="Terminal.SelectLastBlock" />
+  <action id="Terminal.SelectPrompt" />
+  <action id="Terminal.SmartCommandExecution.Debug" />
+  <action id="Terminal.SmartCommandExecution.Run" />
+  <action id="ToggleBookmark" />
+  <action id="ToggleFullScreen" />
+  <action id="UnselectPreviousOccurrence">
+    <keyboard-shortcut first-keystroke="ctrl up" />
+  </action>
+  <action id="UsageFiltering.ReadAccess" />
+  <action id="UsageView.ShowRecentFindUsages" />
+  <action id="ViewSource" />
+  <action id="XDebugger.CopyWatch" />
+  <action id="openAssertEqualsDiff" />
+  <action id="org.intellij.plugins.markdown.ui.actions.styling.InsertImageAction" />
+  <action id="org.intellij.plugins.markdown.ui.actions.styling.ToggleStrikethroughAction" />
+</keymap>

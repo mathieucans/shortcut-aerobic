@@ -13,3 +13,10 @@ class ModuleA:
         if "trash your mouse" == key:
             return "unlock"
         return "locked"
+
+
+IMPORT_ME_1 = "hello"
+IMPORT_ME_2 = "world"
+IMPORT_ME_3 = "!"
+
+IMPORT_ME_BUT_I_HAVE_A_VERY_LONG_NAME = "hello world !"

@@ -1,0 +1,44 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+t ctrl+t",
+        "command": "workbench.action.tasks.runTask",
+        "args": "make check"
+    },
+    {
+        "key": "ctrl+t ctrl+a",
+        "command": "workbench.action.tasks.runTask",
+        "args": "make test-all"
+    },
+    {
+        "key": "ctrl+t ctrl+r",
+        "command": "workbench.action.tasks.runTask",
+        "args": "make red"
+    },
+    {
+        "key": "ctrl+t ctrl+g",
+        "command": "workbench.action.tasks.runTask",
+        "args": "make green"
+    },
+    {
+        "key": "ctrl+t ctrl+f",
+        "command": "workbench.action.tasks.runTask",
+        "args": "make check-file"
+    },
+    {
+        "key": "ctrl+k ctrl+u",
+        "command": "editor.action.transformToUppercase"
+    },
+    {
+        "key": "ctrl+k ctrl+l",
+        "command": "editor.action.transformToLowercase"
+    },
+    {
+        "key": "ctrl+k ctrl+t",
+        "command": "editor.action.transformToTitlecase"
+    },
+    {
+        "key": "ctrl+k ctrl+t",
+        "command": "-workbench.action.selectTheme"
+    }
+]
